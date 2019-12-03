@@ -1,0 +1,13 @@
+.navbar-wrapper {
+  background-color: #ccc;
+}
+
+.navbar-brand {
+  width: 10rem;
+  min-width: 5rem;
+}
+
+.logo-navbar {
+  max-width: 100%;
+  height: auto;
+}
