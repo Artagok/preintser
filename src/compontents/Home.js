@@ -29,6 +29,12 @@ const Home = props => {
         <div>
           <img src="https://picsum.photos/id/1016/3844/2563" />
         </div>
+        <div>
+          <img src="https://picsum.photos/id/1067/5760/3840" />
+        </div>
+        <div>
+          <img src="https://picsum.photos/id/229/2300/1533" />
+        </div>
       </Carousel>
     </div>
   );
