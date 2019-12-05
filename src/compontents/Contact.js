@@ -41,7 +41,7 @@ const Contact = props => {
             }}
           >
             <div className="contact-box">
-              <h2>Contacte</h2>
+              <h2>{lang.contact.box.title}</h2>
               <hr></hr>
               <div className="grid-container">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>

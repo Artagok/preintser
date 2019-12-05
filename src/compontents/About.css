@@ -1,7 +1,9 @@
 .about-wrapper {
   padding: 6.5rem 0 0 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .text-box-wrapper {
   width: calc(75% + 2rem);
@@ -37,4 +39,12 @@
     rgba(0, 0, 0, 1) 50%,
     rgba(0, 0, 255, 0) 100%
   );
+}
+
+.associations-wrapper {
+  margin: 2rem 0;
+}
+.associations-wrapper img {
+  margin: 0 1rem;
+  border: 1px solid black;
 }

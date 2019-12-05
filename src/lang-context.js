@@ -30,6 +30,9 @@ export const langs = {
       }
     },
     contact: {
+      box: {
+        title: "Contacte"
+      },
       form: {}
     }
   },
@@ -63,6 +66,9 @@ export const langs = {
       }
     },
     contact: {
+      box: {
+        title: "Contacto"
+      },
       form: {}
     }
   },
@@ -95,6 +101,9 @@ export const langs = {
       }
     },
     contact: {
+      box: {
+        title: "Contact"
+      },
       form: {}
     }
   }

@@ -22,6 +22,12 @@ const About = props => {
               <p>{ReactHtmlParser(lang.about.textbox2.content2)}</p>
             </TextBox>
           </div>
+          <div className="associations-wrapper">
+            <img src="http://via.placeholder.com/150" />
+            <img src="http://via.placeholder.com/150" />
+            <img src="http://via.placeholder.com/150" />
+            <img src="http://via.placeholder.com/150" />
+          </div>
         </div>
       )}
     </LangContext.Consumer>
