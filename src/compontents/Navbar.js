@@ -37,21 +37,21 @@ const Navbar = props => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href="/#section1">{lang.navbar.home}</NavLink>
+                <NavLink href="/#home">{lang.navbar.home}</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/#section2">{lang.navbar.us}</NavLink>
+                <NavLink href="/#about">{lang.navbar.about}</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/#section3">{lang.navbar.services}</NavLink>
+                <NavLink href="/#services">{lang.navbar.services}</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/#section4">{lang.navbar.contact}</NavLink>
+                <NavLink href="/#contact">{lang.navbar.contact}</NavLink>
               </NavItem>
             </Nav>
             <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown} size="lg">
               <DropdownToggle color="outline-dark" id="lang-button">
-                <i className="fa fa-language" aria-hidden="true"></i>
+                <i className="fa fa-globe" aria-hidden="true"></i>
               </DropdownToggle>
               <DropdownMenu right={false} className="dropdown-menu-md-right">
                 <DropdownItem onClick={() => changeLangAux("ca")}>

@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./compontents/Home";
 import Navbar from "./compontents/Navbar";
 import About from "./compontents/About";
+import Contact from "./compontents/Contact";
 import bg1 from "./assets/img/backgrounds/bg1_blur.jpg";
 import bg2 from "./assets/img/backgrounds/bg2_blur.jpg";
 import bg3 from "./assets/img/backgrounds/bg3_blur.jpg";
@@ -38,7 +39,7 @@ function App() {
         <Navbar />
         <Home />
         <About />
-        <div id="section3" className="content-wrapper"></div>
+        <Contact />
       </LangContext.Provider>
     </div>
   );

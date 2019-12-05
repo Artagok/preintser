@@ -6,7 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 
 const Home = props => {
   return (
-    <div className="home-wrapper" id="section1">
+    <div className="home-wrapper" id="home">
       <Carousel
         showArrows={true}
         showStatus={false}
