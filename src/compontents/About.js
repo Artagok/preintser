@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { LangContext } from "../lang-context";
 import "./About.css";
 import ReactHtmlParser from "react-html-parser";
+import rera from "../assets/img/associations/rera.png";
+import rea from "../assets/img/associations/rea.png";
+import ampb from "../assets/img/associations/ampb.png";
+import ccb from "../assets/img/associations/ccb.png";
 
 const About = props => {
   return (
@@ -23,10 +27,10 @@ const About = props => {
             </TextBox>
           </div>
           <div className="associations-wrapper">
-            <img src="http://via.placeholder.com/150" />
-            <img src="http://via.placeholder.com/150" />
-            <img src="http://via.placeholder.com/150" />
-            <img src="http://via.placeholder.com/150" />
+            <img src={rera} />
+            <img src={rea} />
+            <img src={ampb} />
+            <img src={ccb} />
           </div>
         </div>
       )}

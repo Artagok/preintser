@@ -46,7 +46,7 @@ const Contact = props => {
               <div className="grid-container">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <p>
-                  Carrer Castillejos, 202 - Local 2 08013 BARCELONA (Barcelona)
+                  Carrer Castillejos, 202 - Local 2 08013 Barcelona
                 </p>
                 <hr></hr>
                 <i class="fa fa-envelope" aria-hidden="true"></i>
