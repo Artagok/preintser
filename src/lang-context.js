@@ -33,7 +33,15 @@ export const langs = {
       box: {
         title: "Contacte"
       },
-      form: {}
+      form: {
+        title: "Digui'ns què pensa",
+        name: "Nom",
+        surname: "Cognoms",
+        email: "Correu electrònic",
+        phone: "Telèfon/Mòbil",
+        text: "Text",
+        button: "Enviar"
+      }
     }
   },
   es: {
@@ -69,7 +77,15 @@ export const langs = {
       box: {
         title: "Contacto"
       },
-      form: {}
+      form: {
+        title: "Díganos qué piensa",
+        name: "Nombre",
+        surname: "Apellidos",
+        email: "Correo electrónico",
+        phone: "Teléfono/Móvil",
+        text: "Texto",
+        button: "Enviar"
+      }
     }
   },
   en: {
@@ -104,7 +120,15 @@ export const langs = {
       box: {
         title: "Contact"
       },
-      form: {}
+      form: {
+        title: "Tell us what you think",
+        name: "Name",
+        surname: "Surname",
+        email: "e-mail",
+        phone: "Phone/Mobile",
+        text: "Text",
+        button: "Submit"
+      }
     }
   }
 };

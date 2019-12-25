@@ -51,8 +51,39 @@
   );
 }
 
+/* === Contact Form === */
 #form-wrapper {
   width: 60%;
   flex-grow: 1;
-  height: 800px;
+  font-size: 1.2rem;
+}
+.form-col {
+  display: flex;
+  flex-direction: column;
+}
+#text {
+  height: 12rem;
+}
+input, textarea { 
+  background-color: rgba(255, 255, 255, .25);
+  border: solid 1px black;
+  padding: .5rem 1rem;
+}
+.form-error {
+  border: solid 1px red;
+  box-shadow: 0px 0px 8px 1px rgba(255, 0, 0, .8);
+}
+.col-md-6 {
+  margin: 0 0 .5rem 0;
+}
+form button {
+  margin: 2rem 0 0 0;
+  padding: .5rem 1rem;
+  border: 1px solid black;
+  background: radial-gradient(
+    circle,
+    rgba(255, 0, 0, 0.15) 0%,
+    rgba(127, 0, 170, 0.15) 90%,
+    rgba(0, 0, 255, 0.15) 100%
+  );
 }
