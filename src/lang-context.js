@@ -39,8 +39,26 @@ export const langs = {
         surname: "Cognoms",
         email: "Correu electrònic",
         phone: "Telèfon/Mòbil",
+        optional: "Opcional",
         text: "Text",
-        button: "Enviar"
+        button: "Enviar",
+        success_msg: "El seu missatge ha estat enviat. Moltes gràcies."
+      }
+    },
+    services: {
+      _1: {
+        name: "Rehabilitació i restauració",
+        list: [
+          "Treballs amb amiant",
+          "Baixants",
+          "Celoberts",
+          "Façanes",
+          "Torres",
+          "Claraboies",
+          "Reforç d'estructures",
+          "Diagnòstic patològic",
+          "Manteniment de comunitats de veïns"
+        ]
       }
     }
   },
@@ -83,8 +101,26 @@ export const langs = {
         surname: "Apellidos",
         email: "Correo electrónico",
         phone: "Teléfono/Móvil",
+        optional: "Opcional",
         text: "Texto",
-        button: "Enviar"
+        button: "Enviar",
+        success_msg: "Su mensaje ha sido enviado. Muchas gracias."
+      }
+    },
+    services: {
+      _1: {
+        name: "Rehabilitación y restauración",
+        list: [
+          "Trabajos con amianto",
+          "Bajantes",
+          "Patios de luz",
+          "Fachadas",
+          "Torres",
+          "Claraboyas",
+          "Refuerzo de estructures",
+          "Diagnóstico patológico",
+          "Mantenimiento de comunidades de vecinos"
+        ]
       }
     }
   },
@@ -126,8 +162,26 @@ export const langs = {
         surname: "Surname",
         email: "e-mail",
         phone: "Phone/Mobile",
+        optional: "Optional",
         text: "Text",
-        button: "Submit"
+        button: "Submit",
+        success_msg: "Your message has been sent. Thank you."
+      }
+    },
+    services: {
+      _1: {
+        name: "Rehabilitation and restauration",
+        list: [
+          "Amiant related works",
+          "Downspouts",
+          "Light shafts",
+          "Facade",
+          "Towers",
+          "Skylights",
+          "Structure reinforcement",
+          "Pathological diagnosis",
+          "Residents' association"
+        ]
       }
     }
   }

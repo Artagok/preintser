@@ -31,7 +31,7 @@ const Navbar = props => {
       {([lang, changeLangAux]) => (
         <NavBar fixed="top" expand="md" className="navbar-wrapper">
           <NavbarBrand href="/">
-            <img src={logo} className="logo-navbar"></img>
+            <img alt="" src={logo} className="logo-navbar"></img>
           </NavbarBrand>
           <NavbarToggler onClick={toggleMenu} />
           <Collapse isOpen={isOpen} navbar>
@@ -56,19 +56,19 @@ const Navbar = props => {
               <DropdownMenu right={false} className="dropdown-menu-md-right">
                 <DropdownItem onClick={() => changeLangAux("ca")}>
                   <LanguageItem>
-                    <img src={ca} />
+                    <img src={ca} alt="" />
                     <span>Català</span>
                   </LanguageItem>
                 </DropdownItem>
                 <DropdownItem onClick={() => changeLangAux("es")}>
                   <LanguageItem>
-                    <img src={es} />
+                    <img src={es} alt="" />
                     <span>Castellano</span>
                   </LanguageItem>
                 </DropdownItem>
                 <DropdownItem onClick={() => changeLangAux("en")}>
                   <LanguageItem>
-                    <img src={en} />
+                    <img src={en} alt="" />
                     <span>English</span>
                   </LanguageItem>
                 </DropdownItem>

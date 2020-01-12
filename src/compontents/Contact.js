@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { LangContext } from "../lang-context";
 import "./Contact.css";
 import ReactHtmlParser from "react-html-parser";
-import { Button, Row, Col } from "reactstrap";
+import { Button, Row, Col, Spinner } from "reactstrap";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
@@ -26,7 +26,8 @@ const formSchema = Yup.object().shape({
   text: Yup.string().required("Aquest camp és obligatori")
 });
 
-const sendMail = () => {
+const sendMail = (v, a) => {
+  const format_text = v.text.replace(/\n/gi, "<br>");
   window.Email.send({
     /* ===  Static === */
     Host: "smtp.gmail.com",
@@ -34,19 +35,29 @@ const sendMail = () => {
     Password: "merceIpau2015#",
     To: "linkinpau.97@gmail.com",
     /* ===  Dynamic === */
-    From: "preintsermultiserveis@gmail.com",
-    Subject: "AAAAAAH!",
-    Body: `<b>Contacte</b>: Joan Pera <br>
-    <b>Direccio</b>: C/Font 123 At 3a<br>
-    <hr></hr>
-    Llista<br>
-    <li>
-    <ul>Item1</ul>
-    <ul>Item2</ul>
-    </li>
-    <i>Italics</i>
-    `
-  }).then(() => alert("mail sent successfully"));
+    From: `${v.email}`,
+    Subject: `Web Mail de ${v.name} ${v.surname}`,
+    Body: `
+    <b>Nombre</b>: ${v.name} <br>
+    <b>Apellidos</b>: ${v.surname} <br>
+    <b>Mail</b>: ${v.email} <br>
+    <b>Teléfono</b>: ${v.phone || "---"} <br>
+    <br><hr></hr><br>
+    ${v.text.replace(/\n/gi, "<br>")}`
+  }).then(() => a.setSubmitting(false));
+};
+
+// Function executed when clicking 'Submit' form button
+// and all fields pass validations test
+// v = values, a = actions
+const onSubmit = (v, a) => {
+  document.getElementById("submit-button").remove();
+  document.getElementById("spinner").style.display = "";
+  setTimeout(() => {
+    document.getElementById("spinner").remove();
+    document.getElementById("success-msg").style.display = "inline-block";
+  }, 1000);
+  sendMail(v, a);
 };
 
 const Contact = props => {
@@ -66,13 +77,13 @@ const Contact = props => {
               <h2>{lang.contact.box.title}</h2>
               <hr></hr>
               <div className="grid-container">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <i className="fa fa-map-marker" aria-hidden="true"></i>
                 <p>Carrer Castillejos, 202 - Local 2 08013 Barcelona</p>
                 <hr></hr>
-                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <i className="fa fa-envelope" aria-hidden="true"></i>
                 <p>info@reformaspreintser.es</p>
                 <hr></hr>
-                <i class="fa fa-phone" aria-hidden="true"></i>
+                <i className="fa fa-phone" aria-hidden="true"></i>
                 <p>932 658 205</p>
               </div>
             </div>
@@ -88,9 +99,17 @@ const Contact = props => {
                   text: ""
                 }}
                 validationSchema={formSchema}
+                onSubmit={(values, actions) => onSubmit(values, actions)}
               >
-                {({ values, errors, touched, handleChange, handleBlur }) => (
-                  <form>
+                {({
+                  values,
+                  errors,
+                  touched,
+                  handleChange,
+                  handleBlur,
+                  handleSubmit
+                }) => (
+                  <form onSubmit={handleSubmit}>
                     <Row>
                       <Col md="6" className="form-col">
                         <label htmlFor="name">{lang.contact.form.name}</label>
@@ -105,7 +124,7 @@ const Contact = props => {
                             touched.name && errors.name ? "form-error" : null
                           }
                         />
-                        <ErrorMessage name="name" />
+                        <ErrorMessage name="name" component={FormError} />
                       </Col>
                       <Col md="6" className="form-col">
                         <label htmlFor="">{lang.contact.form.surname}</label>
@@ -116,7 +135,13 @@ const Contact = props => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           value={values.surname}
+                          className={
+                            touched.surname && errors.surname
+                              ? "form-error"
+                              : null
+                          }
                         />
+                        <ErrorMessage name="surname" component={FormError} />
                       </Col>
                     </Row>
                     <Row>
@@ -129,7 +154,11 @@ const Contact = props => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           value={values.email}
+                          className={
+                            touched.email && errors.email ? "form-error" : null
+                          }
                         />
+                        <ErrorMessage name="email" component={FormError} />
                       </Col>
                       <Col md="6" className="form-col">
                         <label htmlFor="phone">{lang.contact.form.phone}</label>
@@ -140,7 +169,12 @@ const Contact = props => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           value={values.phone}
+                          placeholder={lang.contact.form.optional}
+                          className={
+                            touched.phone && errors.phone ? "form-error" : null
+                          }
                         />
+                        <ErrorMessage name="phone" component={FormError} />
                       </Col>
                     </Row>
                     <Row>
@@ -152,13 +186,23 @@ const Contact = props => {
                           onChange={handleChange}
                           onBlur={handleBlur}
                           value={values.text}
+                          className={
+                            touched.text && errors.text ? "form-error" : null
+                          }
                         />
+                        <ErrorMessage name="text" component={FormError} />
                       </Col>
                     </Row>
-                    <button type="submit">{lang.contact.form.button}</button>
+                    <button type="submit" id="submit-button">
+                      {lang.contact.form.button}
+                    </button>
                   </form>
                 )}
               </Formik>
+              <Spinner id="spinner" color="dark" style={{ display: "none" }} />
+              <span id="success-msg" style={{ display: "none" }}>
+                {lang.contact.form.success_msg}
+              </span>
             </div>
           </div>
         </div>
@@ -167,8 +211,8 @@ const Contact = props => {
   );
 };
 
-const FormError = (touched, message) => {
-  return touched ? <pre>{message}</pre> : <p>NOT touched</p>;
-};
+const FormError = props => (
+  <p style={{ fontSize: "1rem", color: "red" }}>{props.children}</p>
+);
 
 export default Contact;

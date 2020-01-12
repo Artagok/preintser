@@ -27,10 +27,10 @@ const About = props => {
             </TextBox>
           </div>
           <div className="associations-wrapper">
-            <img src={rera} />
-            <img src={rea} />
-            <img src={ampb} />
-            <img src={ccb} />
+            <img alt="" src={rera} />
+            <img alt="" src={rea} />
+            <img alt="" src={ampb} />
+            <img alt="" src={ccb} />
           </div>
         </div>
       )}

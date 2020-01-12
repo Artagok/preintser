@@ -21,19 +21,19 @@ const Home = props => {
         className="carousel-wrapper"
       >
         <div>
-          <img src="https://picsum.photos/id/101/2621/1747" />
+          <img alt="" src="https://picsum.photos/id/101/2621/1747" />
         </div>
         <div>
-          <img src="https://picsum.photos/id/1015/6000/4000" />
+          <img alt="" src="https://picsum.photos/id/1015/6000/4000" />
         </div>
         <div>
-          <img src="https://picsum.photos/id/1016/3844/2563" />
+          <img alt="" src="https://picsum.photos/id/1016/3844/2563" />
         </div>
         <div>
-          <img src="https://picsum.photos/id/1067/5760/3840" />
+          <img alt="" src="https://picsum.photos/id/1067/5760/3840" />
         </div>
         <div>
-          <img src="https://picsum.photos/id/229/2300/1533" />
+          <img alt="" src="https://picsum.photos/id/229/2300/1533" />
         </div>
       </Carousel>
     </div>
