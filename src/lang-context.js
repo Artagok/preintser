@@ -59,6 +59,43 @@ export const langs = {
           "Diagnòstic patològic",
           "Manteniment de comunitats de veïns"
         ]
+      },
+      _2: {
+        name: "Reparacions",
+        list: [
+          "Escapaments d'aigua",
+          "Canvi de calderes",
+          "Humitats",
+          "Curtcircuits",
+          "Ferreteria",
+          "Lampisteria",
+          "Fontaneria",
+          "Paleta general"
+        ]
+      },
+      _3: {
+        name: "Col·locació de paviments",
+        list: [
+          "Marbre",
+          "Silestone",
+          "Porcellana",
+          "Granit",
+          "Terratzo",
+          "Gres",
+          "Parquet"
+        ]
+      },
+      _4: {
+        name: "Reformes",
+        list: [
+          "Pisos",
+          "Locals comercials",
+          "Cuines",
+          "Lavabos",
+          "Escales",
+          "Vestíbuls",
+          "Terrasses"
+        ]
       }
     }
   },
@@ -121,6 +158,43 @@ export const langs = {
           "Diagnóstico patológico",
           "Mantenimiento de comunidades de vecinos"
         ]
+      },
+      _2: {
+        name: "Reparaciones",
+        list: [
+          "Escapes de agua",
+          "Cambio de calderas",
+          "Humedades",
+          "Cortocircuitos",
+          "Herrería",
+          "Lampistería",
+          "Fontanería",
+          "Albañilería general"
+        ]
+      },
+      _3: {
+        name: "Col·locació de paviments",
+        list: [
+          "Mármol",
+          "Silestone",
+          "Porcelanato",
+          "Granito",
+          "Terrazo",
+          "Gres",
+          "Parquet"
+        ]
+      },
+      _4: {
+        name: "Reformes",
+        list: [
+          "Pisos",
+          "Locales comerciales",
+          "Cocinas",
+          "Cuartos de baño",
+          "Escaleras",
+          "Vestíbulos",
+          "Terrados"
+        ]
       }
     }
   },
@@ -170,7 +244,7 @@ export const langs = {
     },
     services: {
       _1: {
-        name: "Rehabilitation and restauration",
+        name: "Rehabilitation and restoration",
         list: [
           "Amiant related works",
           "Downspouts",
@@ -181,6 +255,42 @@ export const langs = {
           "Structure reinforcement",
           "Pathological diagnosis",
           "Residents' association"
+        ]
+      },
+      _2: {
+        name: "Repairs",
+        list: [
+          "Water leaks",
+          "Boiler replacements",
+          "Humidity",
+          "Short circuits",
+          "Smithy",
+          "Plumbing",
+          "Brickwork"
+        ]
+      },
+      _3: {
+        name: "Pavement placement",
+        list: [
+          "Marble",
+          "Silestone",
+          "Porcelain",
+          "Granite",
+          "Terrazzo",
+          "Stoneware",
+          "Parquet"
+        ]
+      },
+      _4: {
+        name: "Reformations",
+        list: [
+          "Flats",
+          "Shops",
+          "Kitchens",
+          "Bathrooms",
+          "Stairways",
+          "Hallways",
+          "Roofs"
         ]
       }
     }
