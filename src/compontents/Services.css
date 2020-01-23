@@ -53,6 +53,97 @@
     url("../assets/img/services/services1.jpg");
   background-position: 50% 40%;
 }
+#toggler2 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 0.95) 50%,
+      rgba(255, 255, 255, 0.85) 75%,
+      rgba(255, 255, 255, 0.55) 100%
+    ),
+    url("../assets/img/services/services2.jpg");
+  background-position: 50% 33%;
+  background-size: cover;
+}
+#toggler3 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 0.95) 50%,
+      rgba(255, 255, 255, 0.85) 75%,
+      rgba(255, 255, 255, 0.55) 100%
+    ),
+    url("../assets/img/services/services3.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+}
+#toggler4 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 0.85) 50%,
+      rgba(255, 255, 255, 0.85) 75%,
+      rgba(255, 255, 255, 0.55) 100%
+    ),
+    url("../assets/img/services/services4.jpg");
+  background-position: 0% 58%;
+  background-size: cover;
+}
+#toggler5 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 0.90) 50%,
+      rgba(255, 255, 255, 0.85) 75%,
+      rgba(255, 255, 255, 0.55) 100%
+    ),
+    url("../assets/img/services/services5.jpg");
+  background-position: 0% 30%;
+  background-size: cover;
+}
+#toggler6 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 0.90) 50%,
+      rgba(255, 255, 255, 0.85) 75%,
+      rgba(255, 255, 255, 0.55) 100%
+    ),
+    url("../assets/img/services/services6.jpg");
+  background-position: 0% 10.5%;
+  background-size: cover;
+}
+#toggler7 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.55) 0%,
+      rgba(255, 255, 255, 0.85) 25%,
+      rgba(255, 255, 255, 0.95) 50%,
+      rgba(255, 255, 255, 0.85) 75%,
+      rgba(255, 255, 255, 0.55) 100%
+    ),
+    url("../assets/img/services/services7.jpg");
+  background-position: 0% 85%;
+  background-size: cover;
+}
+#toggler8 {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.50) 0%,
+      rgba(255, 255, 255, 0.80) 25%,
+      rgba(255, 255, 255, 0.92) 50%,
+      rgba(255, 255, 255, 0.80) 75%,
+      rgba(255, 255, 255, 0.50) 100%
+    ),
+    url("../assets/img/services/services8.jpg");
+  background-position: 0% 56%;
+  background-size: cover;
+}
 .content {
   width: 100%;
   background: linear-gradient(
@@ -71,5 +162,11 @@
   margin: 0 !important;
 }
 .col-md-6 p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.col-lg-6 {
+  margin: 0 !important;
+}
+.col-lg-6 p {
+  margin-bottom: 1.5rem;
 }

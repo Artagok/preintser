@@ -78,6 +78,58 @@ const Services = props => {
                 </Row>
               </div>
             </UncontrolledCollapse>
+            {/*====== 5 - Aplicacion de Revestimientos ======*/}
+            <div className="toggler" id="toggler5" onClick={() => setAngle(5)}>
+              <h2>{lang.services._5.name}</h2>
+              <i className={`fa fa-angle-down ${angles[4]}`}></i>
+            </div>
+            <UncontrolledCollapse toggler="#toggler5">
+              <div className="content">
+                <Row noGutters={true}>
+                  <Col md="6">{mapService(lang.services._5.list, 0)}</Col>
+                  <Col md="6">{mapService(lang.services._5.list, 1)}</Col>
+                </Row>
+              </div>
+            </UncontrolledCollapse>
+            {/*====== 6 - Pintura ======*/}
+            <div className="toggler" id="toggler6" onClick={() => setAngle(6)}>
+              <h2>{lang.services._6.name}</h2>
+              <i className={`fa fa-angle-down ${angles[5]}`}></i>
+            </div>
+            <UncontrolledCollapse toggler="#toggler6">
+              <div className="content">
+                <Row noGutters={true}>
+                  <Col md="6">{mapService(lang.services._6.list, 0)}</Col>
+                  <Col md="6">{mapService(lang.services._6.list, 1)}</Col>
+                </Row>
+              </div>
+            </UncontrolledCollapse>
+            {/*====== 7 - Instalacion y legalizacion de servicios ======*/}
+            <div className="toggler" id="toggler7" onClick={() => setAngle(7)}>
+              <h2>{lang.services._7.name}</h2>
+              <i className={`fa fa-angle-down ${angles[6]}`}></i>
+            </div>
+            <UncontrolledCollapse toggler="#toggler7">
+              <div className="content">
+                <Row noGutters={true}>
+                  <Col md="6">{mapService(lang.services._7.list, 0)}</Col>
+                  <Col md="6">{mapService(lang.services._7.list, 1)}</Col>
+                </Row>
+              </div>
+            </UncontrolledCollapse>
+            {/*====== 8 - Servicios Complementarios ======*/}
+            <div className="toggler" id="toggler8" onClick={() => setAngle(8)}>
+              <h2>{lang.services._8.name}</h2>
+              <i className={`fa fa-angle-down ${angles[7]}`}></i>
+            </div>
+            <UncontrolledCollapse toggler="#toggler8">
+              <div className="content">
+                <Row noGutters={true}>
+                  <Col lg="6">{mapService(lang.services._8.list, 0)}</Col>
+                  <Col lg="6">{mapService(lang.services._8.list, 1)}</Col>
+                </Row>
+              </div>
+            </UncontrolledCollapse>
           </div>
         </div>
       )}

@@ -96,6 +96,52 @@ export const langs = {
           "Vestíbuls",
           "Terrasses"
         ]
+      },
+      _5: {
+        name: "Aplicació de revestiments",
+        list: [
+          "Monocapa",
+          "Xinès",
+          "Guix/Pladur",
+          "Morter CP/cal"
+        ]
+      },
+      _6: {
+        name: "Pintura",
+        list: [
+          "Interior",
+          "Exterior",
+          "Epoxi",
+          "Ignífug",
+          "Intumescents"
+        ]
+      },
+      _7: {
+        name: "Instal·lacions i legalitzacions de serveis",
+        list: [
+          "Electricitat",
+          "Calefacció",
+          "Aigua",
+          "Gas"
+        ]
+      },
+      _8: {
+        name: "Serveis complementaris",
+        list: [
+          "ITEs (Inspecció Tècnica de l'Edifici)",
+          "IEEs (Informe d'Avaluació de l'Edifici)",
+          "Cèdules d'habitabilitat",
+          "Millores d'accessibilitat",
+          "Llicències d'activitat",
+          "Certificats d'eficiència energètica",
+          "Projecte tècnic i Direcció d'execució d'obra",
+          "Controls de qualitat",
+          "Informes pericials",
+          "Informes tècnics",
+          "Dictàmens",
+          "Valoracions i taxacions econòmiques",
+          "Estudis i Plans de seguretat i salut"
+        ]
       }
     }
   },
@@ -173,7 +219,7 @@ export const langs = {
         ]
       },
       _3: {
-        name: "Col·locació de paviments",
+        name: "Colocación de pavimentos",
         list: [
           "Mármol",
           "Silestone",
@@ -185,7 +231,7 @@ export const langs = {
         ]
       },
       _4: {
-        name: "Reformes",
+        name: "Reformas",
         list: [
           "Pisos",
           "Locales comerciales",
@@ -194,6 +240,52 @@ export const langs = {
           "Escaleras",
           "Vestíbulos",
           "Terrados"
+        ]
+      },
+      _5: {
+        name: "Aplicación de revestimientos",
+        list: [
+          "Monocapa",
+          "Chino",
+          "Yesería/Pladur",
+          "Mortero CP/cal"
+        ]
+      },
+      _6: {
+        name: "Pintura",
+        list: [
+          "Interior",
+          "Exterior",
+          "Epoxi",
+          "Ignífugo",
+          "Intumescentes"
+        ]
+      },
+      _7: {
+        name: "Instalaciones y legalizaciones de servicios",
+        list: [
+          "Electricidad",
+          "Calefacción",
+          "Agua",
+          "Gas"
+        ]
+      },
+      _8: {
+        name: "Servicios complementarios",
+        list: [
+          "ITEs (Inspección Técnica del Edificio)",
+          "IEEs (Informe de Evaluación del Edificio)",
+          "Cédulas de habitabilidad",
+          "Mejoras de accesibilidad",
+          "Licencias de actividades",
+          "Certificados de eficiencia energetica",
+          "Proyecto técnico y Dirección de ejecución de obra",
+          "Controles de calidad",
+          "Informes periciales",
+          "Informes técnicos",
+          "Dictàmenes",
+          "Valoraciones y tasaciones económicas",
+          "Estudios y Planos de seguridad y salud"
         ]
       }
     }
@@ -291,6 +383,52 @@ export const langs = {
           "Stairways",
           "Hallways",
           "Roofs"
+        ]
+      },
+      _5: {
+        name: "Coating application",
+        list: [
+          "Monolayer",
+          "Chinese",
+          "Plasterwork",
+          "Mortar CP/cal"
+        ]
+      },
+      _6: {
+        name: "Painting",
+        list: [
+          "Interior",
+          "Exterior",
+          "Epoxi",
+          "Flame retardant",
+          "Intumescent"
+        ]
+      },
+      _7: {
+        name: "Installation & Legalization of services",
+        list: [
+          "Electricity",
+          "Heating",
+          "Water",
+          "Gas"
+        ]
+      },
+      _8: {
+        name: "Complementary Services",
+        list: [
+          "ITEs (Technical Inspection of the Building)",
+          "IEEs (Building's Evaluation Report)",
+          "Habitability Documentation",
+          "Improvements in accessibility",
+          "Activity licenses",
+          "Energy Efficiency Certificate",
+          "Technical project & Direction of construction execution",
+          "QA",
+          "Expert report",
+          "Technical reports",
+          "Dictum",
+          "Economic appraisal",
+          "Security and Health Plans"
         ]
       }
     }
