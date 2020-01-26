@@ -3,6 +3,10 @@ import { LangContext } from "../lang-context";
 import "./Home.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import img1 from "../assets/img/carousel/img1.jpg";
+import img2 from "../assets/img/carousel/img2.jpg";
+import img3 from "../assets/img/carousel/img3.jpg";
+import img4 from "../assets/img/carousel/img4.jpg";
 
 const Home = props => {
   return (
@@ -21,19 +25,16 @@ const Home = props => {
         className="carousel-wrapper"
       >
         <div>
-          <img alt="" src="https://picsum.photos/id/101/2621/1747" />
+          <img alt="" src={img1} />
         </div>
         <div>
-          <img alt="" src="https://picsum.photos/id/1015/6000/4000" />
+          <img alt="" src={img2} />
         </div>
         <div>
-          <img alt="" src="https://picsum.photos/id/1016/3844/2563" />
+          <img alt="" src={img3} />
         </div>
         <div>
-          <img alt="" src="https://picsum.photos/id/1067/5760/3840" />
-        </div>
-        <div>
-          <img alt="" src="https://picsum.photos/id/229/2300/1533" />
+          <img alt="" src={img4} />
         </div>
       </Carousel>
     </div>

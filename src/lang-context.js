@@ -31,7 +31,11 @@ export const langs = {
     },
     contact: {
       box: {
-        title: "Contacte"
+        title: "Contacte",
+        map: "Veure al mapa",
+        days: "Dilluns - Divendres",
+        hours1: "10:00h - 13:00h",
+        hours2: "17:00h - 20:00h"
       },
       form: {
         title: "Digui'ns què pensa",
@@ -143,6 +147,8 @@ export const langs = {
           "Estudis i Plans de seguretat i salut"
         ]
       }
+    },
+    footer: {
     }
   },
   es: {
@@ -176,7 +182,11 @@ export const langs = {
     },
     contact: {
       box: {
-        title: "Contacto"
+        title: "Contacto",
+        map: "Ver en mapa",
+        days: "Lunes - Viernes",
+        hours1: "10:00h - 13:00h",
+        hours2: "17:00h - 20:00h"
       },
       form: {
         title: "Díganos qué piensa",
@@ -288,6 +298,8 @@ export const langs = {
           "Estudios y Planos de seguridad y salud"
         ]
       }
+    },
+    footer: {
     }
   },
   en: {
@@ -320,7 +332,11 @@ export const langs = {
     },
     contact: {
       box: {
-        title: "Contact"
+        title: "Contact",
+        map: "See on map",
+        days: "Monday - Friday",
+        hours1: "10 AM - 1 PM",
+        hours2: "5 PM - 8 PM"
       },
       form: {
         title: "Tell us what you think",
@@ -424,13 +440,15 @@ export const langs = {
           "Energy Efficiency Certificate",
           "Technical project & Direction of construction execution",
           "QA",
-          "Expert report",
+          "Expert reports",
           "Technical reports",
           "Dictum",
           "Economic appraisal",
           "Security and Health Plans"
         ]
       }
+    },
+    footer: {
     }
   }
 };

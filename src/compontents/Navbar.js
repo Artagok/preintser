@@ -14,6 +14,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from "reactstrap";
+import * as Scroll from "react-scroll";
 import logo from "../assets/img/logo_v1.PNG";
 import ca from "../assets/img/lang/ca.png";
 import es from "../assets/img/lang/es.png";
@@ -36,17 +37,29 @@ const Navbar = props => {
           <NavbarToggler onClick={toggleMenu} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
+              {/*=== Home ===*/}
               <NavItem>
-                <NavLink href="/#home">{lang.navbar.home}</NavLink>
+                  <Scroll.Link to="home" smooth={true} className="navbar-link">
+                    {lang.navbar.home}
+                  </Scroll.Link>
               </NavItem>
+              {/*=== About ===*/}
               <NavItem>
-                <NavLink href="/#about">{lang.navbar.about}</NavLink>
+                  <Scroll.Link to="about" smooth={true} className="navbar-link">
+                    {lang.navbar.about}
+                  </Scroll.Link>
               </NavItem>
+              {/*=== Services ===*/}
               <NavItem>
-                <NavLink href="/#services">{lang.navbar.services}</NavLink>
+                  <Scroll.Link to="services" smooth={true} className="navbar-link">
+                    {lang.navbar.services}
+                  </Scroll.Link>
               </NavItem>
+              {/*=== Contact ===*/}
               <NavItem>
-                <NavLink href="/#contact">{lang.navbar.contact}</NavLink>
+                  <Scroll.Link to="contact" smooth={true} className="navbar-link">
+                    {lang.navbar.contact}
+                  </Scroll.Link>
               </NavItem>
             </Nav>
             <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown} size="lg">

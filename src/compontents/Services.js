@@ -17,8 +17,12 @@ const Services = props => {
     // of the array passed by param
     // mapped to <p>s</p>
     return !h
-      ? a.slice(0, Math.ceil(a.length / 2)).map(s => <p>{s}</p>)
-      : a.slice(Math.ceil(a.length / 2), a.length).map(s => <p>{s}</p>);
+      ? a
+          .slice(0, Math.ceil(a.length / 2))
+          .map(s => <p key={s.toLowerCase().replace(/\s/gi, "")}>{s}</p>)
+      : a
+          .slice(Math.ceil(a.length / 2), a.length)
+          .map(s => <p key={s.toLowerCase().replace(/\s/gi, "")}>{s}</p>);
   };
 
   return (

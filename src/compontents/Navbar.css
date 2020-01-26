@@ -40,3 +40,27 @@
   outline: none;
   box-shadow: none;
 }
+
+.navbar-link {
+  display: block;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* Underline effect on hover */
+.navbar-link:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: relative;
+  background: black;
+  transition: width 0.25s ease 0s, left 0.25s ease 0s;
+  width: 0;
+}
+.navbar-link:hover:after {
+  width: 100%;
+  left: 0;
+}
