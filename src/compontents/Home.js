@@ -7,6 +7,10 @@ import img1 from "../assets/img/carousel/img1.jpg";
 import img2 from "../assets/img/carousel/img2.jpg";
 import img3 from "../assets/img/carousel/img3.jpg";
 import img4 from "../assets/img/carousel/img4.jpg";
+import preintser1 from "../assets/img/carousel/preintser1.jpg";
+import preintser2 from "../assets/img/carousel/preintser2.jpg";
+import preintser3 from "../assets/img/carousel/preintser3.jpg";
+
 
 const Home = props => {
   return (
@@ -25,17 +29,17 @@ const Home = props => {
         className="carousel-wrapper"
       >
         <div>
-          <img alt="" src={img1} />
+          <img alt="" src={preintser1} />
         </div>
         <div>
-          <img alt="" src={img2} />
+          <img alt="" src={preintser2} />
         </div>
         <div>
-          <img alt="" src={img3} />
+          <img alt="" src={preintser3} />
         </div>
-        <div>
+        {/* <div>
           <img alt="" src={img4} />
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );
