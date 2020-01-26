@@ -35,7 +35,7 @@ const sendMail = (v, a) => {
     Host: "smtp.gmail.com",
     Username: "preintsermultiserveis@gmail.com",
     Password: "merceIpau2015#",
-    To: "linkinpau.97@gmail.com",
+    To: "reformaspreintser@gmail.com",
     /* ===  Dynamic === */
     From: `${v.email}`,
     Subject: `Web Mail de ${v.name} ${v.surname}`,
@@ -80,7 +80,7 @@ const Contact = props => {
               <hr></hr>
               <div className="grid-container">
                 <i className="fa fa-envelope" aria-hidden="true"></i>
-                <p>info@reformaspreintser.es</p>
+                <p>reformaspreintser@gmail.com</p>
                 <hr></hr>
                 <i className="fa fa-phone" aria-hidden="true"></i>
                 <p>932 658 205</p>
