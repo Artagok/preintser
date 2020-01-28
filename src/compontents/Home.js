@@ -11,37 +11,38 @@ import preintser1 from "../assets/img/carousel/preintser1.jpg";
 import preintser2 from "../assets/img/carousel/preintser2.jpg";
 import preintser3 from "../assets/img/carousel/preintser3.jpg";
 
-
 const Home = props => {
   return (
-    <div className="home-wrapper" id="home">
-      <Carousel
-        showArrows={true}
-        showStatus={false}
-        showIndicators={true}
-        showThumbs={true}
-        infiniteLoop={true}
-        width={"75%"}
-        autoPlay={true}
-        stopOnHover={false}
-        interval={4500}
-        transitionTime={1000}
-        className="carousel-wrapper"
-      >
-        <div>
-          <img alt="" src={preintser1} />
+    <LangContext.Consumer>
+      {([lang, _]) => (
+        <div className="home-wrapper" id="home">
+          <h2>{lang.home.title}</h2>
+          <Carousel
+            showArrows={true}
+            showStatus={false}
+            showIndicators={true}
+            showThumbs={true}
+            infiniteLoop={true}
+            width={"75%"}
+            autoPlay={true}
+            stopOnHover={false}
+            interval={4500}
+            transitionTime={1000}
+            className="carousel-wrapper"
+          >
+            <div>
+              <img alt="" src={preintser1} />
+            </div>
+            <div>
+              <img alt="" src={preintser2} />
+            </div>
+            <div>
+              <img alt="" src={preintser3} />
+            </div>
+          </Carousel>
         </div>
-        <div>
-          <img alt="" src={preintser2} />
-        </div>
-        <div>
-          <img alt="" src={preintser3} />
-        </div>
-        {/* <div>
-          <img alt="" src={img4} />
-        </div> */}
-      </Carousel>
-    </div>
+      )}
+    </LangContext.Consumer>
   );
 };
 

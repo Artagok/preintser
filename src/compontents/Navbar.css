@@ -40,6 +40,15 @@
   outline: none;
   box-shadow: none;
 }
+#twitter-button {
+  color: #343a40;
+  margin: 0 0.5rem 0;
+  font-size: 3rem;
+  transition: 0.15s 0s all linear;
+}
+#twitter-button:hover {
+  color: #00aced;
+}
 
 .navbar-link {
   display: block;

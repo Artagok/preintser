@@ -39,29 +39,44 @@ const Navbar = props => {
             <Nav className="mr-auto" navbar>
               {/*=== Home ===*/}
               <NavItem>
-                  <Scroll.Link to="home" smooth={true} className="navbar-link">
-                    {lang.navbar.home}
-                  </Scroll.Link>
+                <Scroll.Link to="home" smooth={true} className="navbar-link">
+                  {lang.navbar.home}
+                </Scroll.Link>
               </NavItem>
               {/*=== About ===*/}
               <NavItem>
-                  <Scroll.Link to="about" smooth={true} className="navbar-link">
-                    {lang.navbar.about}
-                  </Scroll.Link>
+                <Scroll.Link to="about" smooth={true} className="navbar-link">
+                  {lang.navbar.about}
+                </Scroll.Link>
               </NavItem>
               {/*=== Services ===*/}
               <NavItem>
-                  <Scroll.Link to="services" smooth={true} className="navbar-link">
-                    {lang.navbar.services}
-                  </Scroll.Link>
+                <Scroll.Link
+                  to="services"
+                  smooth={true}
+                  className="navbar-link"
+                >
+                  {lang.navbar.services}
+                </Scroll.Link>
               </NavItem>
               {/*=== Contact ===*/}
               <NavItem>
-                  <Scroll.Link to="contact" smooth={true} className="navbar-link">
-                    {lang.navbar.contact}
-                  </Scroll.Link>
+                <Scroll.Link to="contact" smooth={true} className="navbar-link">
+                  {lang.navbar.contact}
+                </Scroll.Link>
               </NavItem>
             </Nav>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/preintser"
+            >
+              <i
+                id="twitter-button"
+                className="fa fa-twitter"
+                aria-hidden="true"
+              ></i>
+            </a>
             <Dropdown isOpen={dropdownOpen} toggle={toggleDropdown} size="lg">
               <DropdownToggle color="outline-dark" id="lang-button">
                 <i className="fa fa-globe" aria-hidden="true"></i>

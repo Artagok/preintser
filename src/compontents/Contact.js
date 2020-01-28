@@ -2,40 +2,46 @@ import React, { useState, useEffect } from "react";
 import { LangContext } from "../lang-context";
 import "./Contact.css";
 import ReactHtmlParser from "react-html-parser";
-import { Button, Row, Col, Spinner } from "reactstrap";
+import { Row, Col, Spinner } from "reactstrap";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import L1 from "../assets/img/transports/L1.png";
 import L2 from "../assets/img/transports/L2.png";
 
 // Schema for Contact Form
-const formSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(1, "No pot ser buit")
-    .max(30, "Nom massa llarg")
-    .required("Aquest camp és obligatori"),
-  surname: Yup.string()
-    .min(1, "No pot ser buit")
-    .max(60, "Cognom massa llarg")
-    .required("Aquest camp és obligatori"),
-  email: Yup.string()
-    .email("Introdueix un correu vàlid")
-    .required("Aquest camp és obligatori"),
-  phone: Yup.string().matches(
-    /^\+?([0-9]|\s)*$/i,
-    "Introdueix un número de telèfon vàlid"
-  ),
-  text: Yup.string().required("Aquest camp és obligatori")
-});
+// With language parameter to customize
+// err msg depending on the language
+const createFormSchema = lang => {
+  const formSchema = Yup.object().shape({
+    name: Yup.string()
+      .min(1, lang.contact.form.errors.min)
+      .max(30, lang.contact.form.errors.max)
+      .required(lang.contact.form.errors.required),
+    surname: Yup.string()
+      .min(1, lang.contact.form.errors.empty)
+      .max(60, lang.contact.form.errors.max)
+      .required(lang.contact.form.errors.required),
+    email: Yup.string()
+      .email(lang.contact.form.errors.email)
+      .required(lang.contact.form.errors.required),
+    phone: Yup.string().matches(
+      /^\+?([0-9]|\s)*$/i,
+      lang.contact.form.errors.phone
+    ),
+    text: Yup.string().required(lang.contact.form.errors.required),
+    checkbox: Yup.boolean().oneOf([true], lang.contact.form.errors.required)
+  });
+  return formSchema;
+};
 
 const sendMail = (v, a) => {
-  const format_text = v.text.replace(/\n/gi, "<br>");
   window.Email.send({
     /* ===  Static === */
     Host: "smtp.gmail.com",
     Username: "preintsermultiserveis@gmail.com",
     Password: "merceIpau2015#",
-    To: "reformaspreintser@gmail.com",
+    // To: "reformaspreintser@gmail.com",
+    To: "linkinpau.97@gmail.com",
     /* ===  Dynamic === */
     From: `${v.email}`,
     Subject: `Web Mail de ${v.name} ${v.surname}`,
@@ -112,9 +118,10 @@ const Contact = props => {
                   surname: "",
                   email: "",
                   phone: "",
-                  text: ""
+                  text: "",
+                  checkbox: false
                 }}
-                validationSchema={formSchema}
+                validationSchema={createFormSchema(lang)}
                 onSubmit={(values, actions) => onSubmit(values, actions)}
               >
                 {({
@@ -209,6 +216,36 @@ const Contact = props => {
                         <ErrorMessage name="text" component={FormError} />
                       </Col>
                     </Row>
+                    <Row>
+                      <Col className="form-col">
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "baseline",
+                            marginTop: "1rem"
+                          }}
+                        >
+                          <input
+                            type="checkbox"
+                            name="checkbox"
+                            id="checkbox"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.checkbox}
+                            className={
+                              touched.checkbox && errors.checkbox
+                                ? "form-error"
+                                : null
+                            }
+                          />
+                          <p style={{ fontSize: "1rem" }}>
+                            {lang.contact.form.checkbox}
+                          </p>
+                        </div>
+                        <ErrorMessage name="checkbox" component={FormError} />
+                      </Col>
+                    </Row>
                     <button type="submit" id="submit-button">
                       {lang.contact.form.button}
                     </button>
@@ -228,7 +265,15 @@ const Contact = props => {
 };
 
 const FormError = props => (
-  <p style={{ fontSize: "1rem", color: "red" }}>{props.children}</p>
+  <p
+    style={{
+      fontSize: "1rem",
+      color: "#b30000",
+      textShadow: ".5px .5px darkred"
+    }}
+  >
+    {props.children}
+  </p>
 );
 
 const Transports = () => {
