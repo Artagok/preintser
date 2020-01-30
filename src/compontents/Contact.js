@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import { LangContext } from "../lang-context";
 import "./Contact.css";
 import ReactHtmlParser from "react-html-parser";
-import { Row, Col, Spinner } from "reactstrap";
+import {
+  Row,
+  Col,
+  Spinner,
+  UncontrolledPopover,
+  PopoverHeader,
+  PopoverBody
+} from "reactstrap";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import L1 from "../assets/img/transports/L1.png";
@@ -223,7 +230,8 @@ const Contact = props => {
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "baseline",
-                            marginTop: "1rem"
+                            marginTop: "1rem",
+                            textAlign: "left"
                           }}
                         >
                           <input
@@ -241,7 +249,21 @@ const Contact = props => {
                           />
                           <p style={{ fontSize: "1rem" }}>
                             {lang.contact.form.checkbox}
+                            <span id="checkbox-tooltip">
+                              {lang.contact.form.checkbox_span}
+                            </span>
                           </p>
+                          <UncontrolledPopover
+                            trigger="legacy"
+                            placement="auto-end"
+                            target="checkbox-tooltip"
+                          >
+                            <PopoverBody>
+                              {ReactHtmlParser(
+                                lang.contact.form.checkbox_tooltip
+                              )}
+                            </PopoverBody>
+                          </UncontrolledPopover>
                         </div>
                         <ErrorMessage name="checkbox" component={FormError} />
                       </Col>

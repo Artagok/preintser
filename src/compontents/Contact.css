@@ -110,6 +110,14 @@ form button {
 input[type="checkbox"] {
   transform: scale(1.5);
 }
+#checkbox-tooltip {
+  text-decoration: underline;
+  color: darkblue;
+  cursor: pointer;
+}
+.popover {
+  max-width: 300px !important;
+}
 .form-error {
   border: solid 1px red;
   box-shadow: 0px 0px 8px 1px rgba(255, 0, 0, 0.6);

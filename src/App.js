@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LangContext, langs } from "./lang-context";
 import "./App.css";
 import Home from "./compontents/Home";
@@ -38,12 +39,28 @@ function App() {
   return (
     <div className="app-wrapper">
       <LangContext.Provider value={[lang, changeLangAux]}>
-        <Navbar />
-        <Home />
-        <About />
-        <Services />
-        <Contact />
-        <Footer />
+        <Router>
+          <Switch>
+            <Route exact path="/">
+              <React.Fragment>
+                <Navbar />
+                <Home />
+                <About />
+                <Services />
+                <Contact />
+              </React.Fragment>
+            </Route>
+            <Route
+              path="/toc"
+              render={() => <div style={{ height: "1200px" }}>ToC</div>}
+            />
+            <Route
+              path="/pp"
+              render={() => <div style={{ height: "100%" }}>Privacitat</div>}
+            />
+          </Switch>
+          <Footer />
+        </Router>
       </LangContext.Provider>
     </div>
   );

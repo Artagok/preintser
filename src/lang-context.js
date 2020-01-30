@@ -51,7 +51,16 @@ export const langs = {
         button: "Enviar",
         success_msg: "El seu missatge ha estat enviat. Moltes gràcies.",
         checkbox:
-          "Accepto el tractament de les meves dades amb la finalitat de rebre la informació sol·licitada",
+          "Accepto el tractament de les meves dades amb la finalitat de rebre la ",
+        checkbox_span: "informació sol·licitada",
+        checkbox_tooltip: `A Reformes Preintser (titularitat de Preintser Multiservicios, S.L.U.) tractarem la
+        informació que ens facilitis amb la finalitat d'enviar-te <b>informació relacionada amb
+        la teva sol·licitud</b> sobre els nostres productes i/o serveis. Podràs exercir els
+        drets d'<b>accés</b>, <b>rectificació</b>, <b>limitació</b>, <b>oposició</b>, <b>portabilitat</b>, o <b>retirar</b> el
+        consentimient enviant un email a <tt>preintser-decor@telefonica.net</tt>. També pots
+        sol·licitar la tutela de drets davant l'Autoritat de Control (AEPD). <br><br> Pots consultar
+        informació addicional i detallada sobre protecció de dades a la nostra <b>Política de
+        Privacitat</b> situada al <b>peu de pàgina</b>.`,
         errors: {
           empty: "No pot ser buit",
           min: "Massa curt",
@@ -205,7 +214,16 @@ export const langs = {
         button: "Enviar",
         success_msg: "Su mensaje ha sido enviado. Muchas gracias.",
         checkbox:
-          "Acepto el tratamiento de mis datos con la finalidad de recibir la información solicitada",
+          "Acepto el tratamiento de mis datos con la finalidad de recibir la ",
+        checkbox_span: "información solicitada",
+        checkbox_tooltip: `En Reformas Preintser (titularidad de Preintser Multiservicios, S.L.U.) trataremos la
+        información que nos facilites con la finalidad de enviarte <b>información relacionada con
+        tu solicitud</b> sobre nuestros productos y/o servicios. Podrás ejercer los
+        derechos de <b>acceso</b>, <b>rectificación</b>, <b>limitación</b>, <b>oposición</b>, <b>portabilidad</b>, o <b>retirar</b> el
+        consentimiento enviando un email a <tt>preintser-decor@telefonica.net</tt>. También puedes
+        solicitar la tutela de derechos ante la Autoridad de Control (AEPD). <br><br> Puedes consultar
+        información adicional y detallada sobre protección de datos en nuestra <b>Política de
+        Privacidad</b> situada en el <b>pie de página</b>.`,
         errors: {
           empty: "No puede ser vacío",
           min: "Demasiado corto",
@@ -358,7 +376,15 @@ export const langs = {
         button: "Submit",
         success_msg: "Your message has been sent. Thank you.",
         checkbox:
-          "I accept the treatment of my data with the purpose of receiving the required information",
+          "I accept the treatment of my data with the purpose of receiving the ",
+        checkbox_span: "required information",
+        checkbox_tooltip: `At Reformes Preintser (titularity of Preintser Multiservicios, S.L.U.) we will treat the
+        information you provide us with the purpose of sending you <b>information related to your request</b> of our products and/or services. You can exercise your
+        rights of <b>access</b>, <b>amendment</b>, <b>limitation</b>, <b>opposition</b>, <b>portability</b>, or <b>withdrawal</b> of
+        consent by sending an email at <tt>preintser-decor@telefonica.net</tt>. You can also
+        apply for tutelage of rights before <i>Autoritat de Control (AEPD)</i>. <br><br> You can find
+        additional and detailed information about data protection in our <b>Privacy Policy</b> 
+        located at the <b>page footer</b>.`,
         errors: {
           empty: "Can't be empty",
           min: "Too short",

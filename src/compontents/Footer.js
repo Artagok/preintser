@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { LangContext } from "../lang-context";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import "./Footer.css";
@@ -17,9 +18,15 @@ const Footer = props => {
             <p>{`Copyright © ${new Date().getFullYear()} Preintser Multiserveis S.L.U.`}</p>
           </div>
           <div className="footer-item" style={{ padding: ".5rem 0rem" }}>
-            <span>{lang.footer.legal[0]}</span> {/* Avis Legal */}
+            {/* Avis Legal */}
+            <Link to="/toc">
+              <span>{lang.footer.legal[0]}</span>
+            </Link>{" "}
             <pre> | </pre>
-            <span>{lang.footer.legal[1]}</span> {/* Privacitat */}
+            {/* Privacitat */}
+            <Link to="/pp">
+              <span>{lang.footer.legal[1]}</span>{" "}
+            </Link>
             <pre> | </pre>
             <span>{lang.footer.legal[2]}</span> {/* Cookies */}
             <pre> | </pre>
