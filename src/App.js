@@ -8,6 +8,7 @@ import About from "./compontents/About";
 import Services from "./compontents/Services";
 import Contact from "./compontents/Contact";
 import Footer from "./compontents/Footer";
+import LegalTexts from "./compontents/LegalTexts";
 import bg1 from "./assets/img/backgrounds/bg1_blur.jpg";
 import bg2 from "./assets/img/backgrounds/bg2_blur.jpg";
 import bg3 from "./assets/img/backgrounds/bg3_blur.jpg";
@@ -50,14 +51,10 @@ function App() {
                 <Contact />
               </React.Fragment>
             </Route>
-            <Route
-              path="/toc"
-              render={() => <div style={{ height: "1200px" }}>ToC</div>}
-            />
-            <Route
-              path="/pp"
-              render={() => <div style={{ height: "100%" }}>Privacitat</div>}
-            />
+            {/* prettier-ignore */}
+            <Route path="/legal"   render={() => <LegalTexts type={0} />} />
+            <Route path="/privacy" render={() => <LegalTexts type={1} />} />
+            <Route path="/cookies" render={() => <LegalTexts type={2} />} />
           </Switch>
           <Footer />
         </Router>

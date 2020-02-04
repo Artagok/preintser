@@ -6,7 +6,7 @@ import "./Footer.css";
 import certificate from "../assets/img/legal/certificate.png";
 
 const Footer = props => {
-  /* Certificate Modal*/
+  /* Certificate Modal */
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 
@@ -18,20 +18,23 @@ const Footer = props => {
             <p>{`Copyright © ${new Date().getFullYear()} Preintser Multiserveis S.L.U.`}</p>
           </div>
           <div className="footer-item" style={{ padding: ".5rem 0rem" }}>
-            {/* Avis Legal */}
-            <Link to="/toc">
+            {/* === Avis Legal === */}
+            <Link to="/legal" onClick={() => window.scrollTo(0, 0)}>
               <span>{lang.footer.legal[0]}</span>
             </Link>{" "}
             <pre> | </pre>
-            {/* Privacitat */}
-            <Link to="/pp">
+            {/* === Privacitat === */}
+            <Link to="/privacy" onClick={() => window.scrollTo(0, 0)}>
               <span>{lang.footer.legal[1]}</span>{" "}
             </Link>
             <pre> | </pre>
-            <span>{lang.footer.legal[2]}</span> {/* Cookies */}
+            {/* === Cookies === */}
+            <Link to="/cookies" onClick={() => window.scrollTo(0, 0)}>
+              <span>{lang.footer.legal[2]}</span>
+            </Link>
             <pre> | </pre>
+            {/* === Certificat === */}
             <span onClick={toggle}>{lang.footer.legal[3]}</span>{" "}
-            {/* Certificat */}
           </div>
           <div className="footer-item">
             <a target="_blank" href="https://github.com/artagok">

@@ -16,7 +16,7 @@ const Home = props => {
     <LangContext.Consumer>
       {([lang, _]) => (
         <div className="home-wrapper" id="home">
-          <h2>{lang.home.title}</h2>
+          {/* <h2>{lang.home.title}</h2> */}
           <Carousel
             showArrows={true}
             showStatus={false}
