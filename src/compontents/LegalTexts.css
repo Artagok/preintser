@@ -1,0 +1,30 @@
+.legaltexts-wrapper {
+  height: 1500px;
+}
+.title-bar {
+  padding: 0.25rem 0.5rem;
+  background-color: white;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+.title-bar h3 {
+  margin: 0;
+}
+.title-bar-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.title-bar-item:first-child > a {
+  margin-right: auto;
+}
+.title-bar .fa {
+  font-size: 1.5rem;
+}

@@ -161,7 +161,8 @@ export const langs = {
         "Política de Cookies",
         "Certificat"
       ]
-    }
+    },
+    legalTexts: {}
   },
   es: {
     navbar: {
@@ -324,7 +325,8 @@ export const langs = {
         "Política de Cookies",
         "Certificado"
       ]
-    }
+    },
+    legalTexts: {}
   },
   en: {
     navbar: {
@@ -485,7 +487,8 @@ export const langs = {
     },
     footer: {
       legal: ["Legal Notice", "Privacy Policy", "Cookies Policy", "Certificate"]
-    }
+    },
+    legalTexts: {}
   }
 };
 
