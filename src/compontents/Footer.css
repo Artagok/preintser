@@ -28,10 +28,19 @@
 .footer-item span {
   cursor: pointer;
 }
+.footer-item span:hover {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
 .footer-item pre {
   margin: 0;
   font-size: inherit;
   overflow: hidden;
+}
+.footer-item a {
+  text-decoration: none;
+  color: black;
 }
 .certificate-modal {
   background: transparent !important;

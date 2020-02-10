@@ -1,5 +1,5 @@
 .legaltexts-wrapper {
-  height: 1500px;
+  height: 600px;
 }
 .title-bar {
   padding: 0.25rem 0.5rem;
@@ -24,7 +24,14 @@
 }
 .title-bar-item:first-child > a {
   margin-right: auto;
+  color: black;
 }
 .title-bar .fa {
   font-size: 1.5rem;
+}
+
+/* === Content === */
+
+.legaltexts-content-wrapper {
+  padding: 0rem 1rem 0rem;
 }
