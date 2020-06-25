@@ -2,7 +2,7 @@
   "name": "preintser",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artagok.github.io/preintser/",
+  "homepage": ".",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "formik": "^2.1.4",
