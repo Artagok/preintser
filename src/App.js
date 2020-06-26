@@ -42,7 +42,7 @@ function App() {
       <LangContext.Provider value={[lang, changeLangAux]}>
         <Router>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/" basename="/preintser">
               <React.Fragment>
                 <Navbar />
                 <Home />
