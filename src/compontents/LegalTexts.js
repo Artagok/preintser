@@ -88,7 +88,7 @@ const _0 = props => (
         <b>Teléfono</b>: 932658205
       </li>
       <li>
-        <b>eMail</b>: preintser-decor@telefonica.net{" "}
+        <b>eMail</b>: reformaspreintser@gmail.com{" "}
       </li>
       <li>
         <b>Formulario de contacto online</b>: https://www.reformaspreintser.es/{" "}
@@ -293,7 +293,7 @@ const _1 = props => (
         <b>Teléfono</b>: 932658205
       </li>
       <li>
-        <b>eMail</b>: preintser-decor@telefonica.net
+        <b>eMail</b>: reformaspreintser@gmail.com
       </li>
     </ul>
     <h5>Obtención y Tratamiento de Datos Personales</h5>
@@ -404,7 +404,7 @@ const _1 = props => (
       serie de derechos relacionados con el tratamiento de sus datos personales.
       Para ello, el Usuario deberá dirigirse, aportando documentación que
       acredite su identidad (DNI o pasaporte), mediante correo electrónico a
-      <tt> preintser-decor@telefonica.net</tt>, o bien mediante comunicación
+      <tt> reformaspreintser@gmail.com</tt>, o bien mediante comunicación
       escrita a la dirección que aparece en nuestro Aviso Legal. Dicha
       comunicación deberá reflejar la siguiente información: nombre y apellidos
       del Usuario, la petición de solicitud, el domicilio y los datos
@@ -504,7 +504,7 @@ const _1 = props => (
     <hr></hr>
     <p>
       "Reformas Preintser" cuenta con perfil en algunas de las principales redes
-      sociales de Internet (Twitter, Google+), reconociéndose en todos los casos
+      sociales de Internet (Twitter), reconociéndose en todos los casos
       Responsable del tratamiento de los datos de sus seguidores, fans,
       suscriptores, comentaristas y otros perfiles de Usuarios (en adelante,
       seguidores) publicados por "Reformas Preintser".

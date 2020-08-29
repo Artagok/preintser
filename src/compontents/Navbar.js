@@ -15,7 +15,6 @@ import {
   DropdownItem
 } from "reactstrap";
 import * as Scroll from "react-scroll";
-import logo from "../assets/img/logo_v1.PNG";
 import ca from "../assets/img/lang/ca.png";
 import es from "../assets/img/lang/es.png";
 import en from "../assets/img/lang/en.png";
@@ -32,7 +31,7 @@ const Navbar = props => {
       {([lang, changeLangAux]) => (
         <NavBar fixed="top" expand="md" className="navbar-wrapper">
           <NavbarBrand href="/">
-            <img alt="" src={logo} className="logo-navbar"></img>
+            <img alt="" src={lang.navbar.logo} className="logo-navbar"></img>
           </NavbarBrand>
           <NavbarToggler onClick={toggleMenu} />
           <Collapse isOpen={isOpen} navbar>

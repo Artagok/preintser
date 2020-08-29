@@ -1,8 +1,11 @@
 import React from "react";
-
+import logo_ca from "./assets/img/logo_ca.png";
+import logo_es from "./assets/img/logo_es.png";
+import logo_en from "./assets/img/logo_en.png";
 export const langs = {
   ca: {
     navbar: {
+      logo: logo_ca,
       home: "Inici",
       about: "Qui som?",
       services: "Serveis",
@@ -96,7 +99,8 @@ export const langs = {
           "Ferreteria",
           "Lampisteria",
           "Fontaneria",
-          "Paleta general"
+          "Paleta general",
+          "i més..."
         ]
       },
       _3: {
@@ -108,7 +112,8 @@ export const langs = {
           "Granit",
           "Terratzo",
           "Gres",
-          "Parquet"
+          "Parquet",
+          "i més..."
         ]
       },
       _4: {
@@ -125,15 +130,15 @@ export const langs = {
       },
       _5: {
         name: "Aplicació de revestiments",
-        list: ["Monocapa", "Xinès", "Guix/Pladur", "Morter CP/cal"]
+        list: ["Monocapa", "Xinès", "Guix/Pladur", "Morter CP/cal", "i més..."]
       },
       _6: {
         name: "Pintura",
-        list: ["Interior", "Exterior", "Epoxi", "Ignífug", "Intumescents"]
+        list: ["Interior", "Exterior", "Epoxi", "Ignífug", "Intumescents", "i més..."]
       },
       _7: {
         name: "Instal·lacions i legalitzacions de serveis",
-        list: ["Electricitat", "Calefacció", "Aigua", "Gas"]
+        list: ["Electricitat", "Calefacció/Aire condicionat", "Aigua", "Gas"]
       },
       _8: {
         name: "Serveis complementaris",
@@ -166,6 +171,7 @@ export const langs = {
   },
   es: {
     navbar: {
+      logo: logo_es,
       home: "Inicio",
       about: "¿Quiénes somos?",
       services: "Servicios",
@@ -260,7 +266,8 @@ export const langs = {
           "Herrería",
           "Lampistería",
           "Fontanería",
-          "Albañilería general"
+          "Albañilería general",
+          "y más..."
         ]
       },
       _3: {
@@ -272,7 +279,8 @@ export const langs = {
           "Granito",
           "Terrazo",
           "Gres",
-          "Parquet"
+          "Parquet",
+          "y más..."
         ]
       },
       _4: {
@@ -289,15 +297,15 @@ export const langs = {
       },
       _5: {
         name: "Aplicación de revestimientos",
-        list: ["Monocapa", "Chino", "Yesería/Pladur", "Mortero CP/cal"]
+        list: ["Monocapa", "Chino", "Yesería/Pladur", "Mortero CP/cal", "y más..."]
       },
       _6: {
         name: "Pintura",
-        list: ["Interior", "Exterior", "Epoxi", "Ignífugo", "Intumescentes"]
+        list: ["Interior", "Exterior", "Epoxi", "Ignífugo", "Intumescentes", "y más..."]
       },
       _7: {
         name: "Instalaciones y legalizaciones de servicios",
-        list: ["Electricidad", "Calefacción", "Agua", "Gas"]
+        list: ["Electricidad", "Calefacción/Aire acondicionado", "Agua", "Gas"]
       },
       _8: {
         name: "Servicios complementarios",
@@ -330,6 +338,7 @@ export const langs = {
   },
   en: {
     navbar: {
+      logo: logo_en,
       home: "Home",
       about: "About us",
       services: "Services",
@@ -421,7 +430,8 @@ export const langs = {
           "Short circuits",
           "Smithy",
           "Plumbing",
-          "Brickwork"
+          "Brickwork",
+          "and more..."
         ]
       },
       _3: {
@@ -433,7 +443,8 @@ export const langs = {
           "Granite",
           "Terrazzo",
           "Stoneware",
-          "Parquet"
+          "Parquet",
+          "and more..."
         ]
       },
       _4: {
@@ -450,7 +461,7 @@ export const langs = {
       },
       _5: {
         name: "Coating application",
-        list: ["Monolayer", "Chinese", "Plasterwork", "Mortar CP/cal"]
+        list: ["Monolayer", "Chinese", "Plasterwork", "Mortar CP/cal", "and more..."]
       },
       _6: {
         name: "Painting",
@@ -459,12 +470,13 @@ export const langs = {
           "Exterior",
           "Epoxi",
           "Flame retardant",
-          "Intumescent"
+          "Intumescent",
+          "and more..."
         ]
       },
       _7: {
         name: "Installation & Legalization of services",
-        list: ["Electricity", "Heating", "Water", "Gas"]
+        list: ["Electricity", "Heating/Air conditioning", "Water", "Gas"]
       },
       _8: {
         name: "Complementary Services",
