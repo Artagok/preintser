@@ -15,7 +15,7 @@ const Footer = props => {
       {([lang, _]) => (
         <div className="footer-wrapper">
           <div className="footer-item">
-            <p>{`Copyright © ${new Date().getFullYear()} Preintser Multiserveis S.L.U.`}</p>
+            <p>{`Copyright © ${new Date().getFullYear()} Preintser Multiservicios S.L.U.`}</p>
           </div>
           <div className="footer-item" style={{ padding: ".5rem 0rem" }}>
             {/* === Avis Legal === */}

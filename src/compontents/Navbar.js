@@ -25,12 +25,23 @@ const Navbar = props => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+  const [scrollStyle, setScrollStyle] = useState([
+    {width: "18rem"}, 
+    {fontSize: "1.5rem"}
+  ]);
+
+  window.onscroll = () => {
+    setScrollStyle(
+      window.pageYOffset == 0
+        ? [{width: "18rem"}, {fontSize: "1.5rem"}]
+        : [{width: "8rem"}, {fontSize: "1.25rem"}]);
+  };
 
   return (
     <LangContext.Consumer>
       {([lang, changeLangAux]) => (
         <NavBar fixed="top" expand="md" className="navbar-wrapper">
-          <NavbarBrand href="/">
+          <NavbarBrand href="/" style={scrollStyle[0]}>
             <img alt="" src={lang.navbar.logo} className="logo-navbar"></img>
           </NavbarBrand>
           <NavbarToggler onClick={toggleMenu} />
@@ -38,13 +49,23 @@ const Navbar = props => {
             <Nav className="mr-auto" navbar>
               {/*=== Home ===*/}
               <NavItem>
-                <Scroll.Link to="home" smooth={true} className="navbar-link">
+                <Scroll.Link
+                  to="home"
+                  smooth={true}
+                  className="navbar-link"
+                  style={scrollStyle[1]}
+                >
                   {lang.navbar.home}
                 </Scroll.Link>
               </NavItem>
               {/*=== About ===*/}
               <NavItem>
-                <Scroll.Link to="about" smooth={true} className="navbar-link">
+                <Scroll.Link
+                  to="about"
+                  smooth={true}
+                  className="navbar-link"
+                  style={scrollStyle[1]}
+                >
                   {lang.navbar.about}
                 </Scroll.Link>
               </NavItem>
@@ -54,13 +75,19 @@ const Navbar = props => {
                   to="services"
                   smooth={true}
                   className="navbar-link"
+                  style={scrollStyle[1]}
                 >
                   {lang.navbar.services}
                 </Scroll.Link>
               </NavItem>
               {/*=== Contact ===*/}
               <NavItem>
-                <Scroll.Link to="contact" smooth={true} className="navbar-link">
+                <Scroll.Link
+                  to="contact"
+                  smooth={true}
+                  className="navbar-link"
+                  style={scrollStyle[1]}
+                >
                   {lang.navbar.contact}
                 </Scroll.Link>
               </NavItem>

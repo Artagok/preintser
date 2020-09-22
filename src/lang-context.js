@@ -60,7 +60,7 @@ export const langs = {
         informació que ens facilitis amb la finalitat d'enviar-te <b>informació relacionada amb
         la teva sol·licitud</b> sobre els nostres productes i/o serveis. Podràs exercir els
         drets d'<b>accés</b>, <b>rectificació</b>, <b>limitació</b>, <b>oposició</b>, <b>portabilitat</b>, o <b>retirar</b> el
-        consentimient enviant un email a <tt>preintser-decor@telefonica.net</tt>. També pots
+        consentimient enviant un email a <tt>reformaspreintser@gmail.com</tt>. També pots
         sol·licitar la tutela de drets davant l'Autoritat de Control (AEPD). <br><br> Pots consultar
         informació addicional i detallada sobre protecció de dades a la nostra <b>Política de
         Privacitat</b> situada al <b>peu de pàgina</b>.`,
@@ -227,7 +227,7 @@ export const langs = {
         información que nos facilites con la finalidad de enviarte <b>información relacionada con
         tu solicitud</b> sobre nuestros productos y/o servicios. Podrás ejercer los
         derechos de <b>acceso</b>, <b>rectificación</b>, <b>limitación</b>, <b>oposición</b>, <b>portabilidad</b>, o <b>retirar</b> el
-        consentimiento enviando un email a <tt>preintser-decor@telefonica.net</tt>. También puedes
+        consentimiento enviando un email a <tt>reformaspreintser@gmail.com</tt>. También puedes
         solicitar la tutela de derechos ante la Autoridad de Control (AEPD). <br><br> Puedes consultar
         información adicional y detallada sobre protección de datos en nuestra <b>Política de
         Privacidad</b> situada en el <b>pie de página</b>.`,
@@ -392,7 +392,7 @@ export const langs = {
         checkbox_tooltip: `At Reformes Preintser (titularity of Preintser Multiservicios, S.L.U.) we will treat the
         information you provide us with the purpose of sending you <b>information related to your request</b> of our products and/or services. You can exercise your
         rights of <b>access</b>, <b>amendment</b>, <b>limitation</b>, <b>opposition</b>, <b>portability</b>, or <b>withdrawal</b> of
-        consent by sending an email at <tt>preintser-decor@telefonica.net</tt>. You can also
+        consent by sending an email to <tt>reformaspreintser@gmail.com</tt>. You can also
         apply for tutelage of rights before <i>Autoritat de Control (AEPD)</i>. <br><br> You can find
         additional and detailed information about data protection in our <b>Privacy Policy</b> 
         located at the <b>page footer</b>.`,
