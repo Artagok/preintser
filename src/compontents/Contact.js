@@ -99,8 +99,8 @@ const Contact = props => {
                 <p>932 658 205</p>
                 <hr></hr>
                 <i className="fa fa-map-marker" aria-hidden="true"></i>
-                <p>Carrer Castillejos, 202</p>
-                <p>Local 2 08013 Barcelona</p>
+                <p>{lang.contact.box.location1}</p>
+                <p>{lang.contact.box.location2}</p>
                 <a
                   id="map-link"
                   target="_blank"

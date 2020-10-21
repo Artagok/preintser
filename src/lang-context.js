@@ -38,6 +38,8 @@ export const langs = {
     contact: {
       box: {
         title: "Contacte",
+        location1: "Carrer Castillejos, 202",
+        location2: "Local 2 08013 Barcelona",
         map: "Veure al mapa",
         days: "Dilluns - Divendres",
         hours1: "10:00h - 13:00h",
@@ -205,6 +207,8 @@ export const langs = {
     contact: {
       box: {
         title: "Contacto",
+        location1: "Calle Castillejos, 202",
+        location2: "Local 2 08013 Barcelona",
         map: "Ver en mapa",
         days: "Lunes - Viernes",
         hours1: "10:00h - 13:00h",
@@ -371,6 +375,8 @@ export const langs = {
     contact: {
       box: {
         title: "Contact",
+        location1: "Castillejos Street, 202",
+        location2: "Premises 2 08013 Barcelona",
         map: "See on map",
         days: "Monday - Friday",
         hours1: "10 AM - 1 PM",
