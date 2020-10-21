@@ -8,7 +8,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
+  // NavLink,
   Dropdown,
   DropdownToggle,
   DropdownMenu,
@@ -32,7 +32,7 @@ const Navbar = props => {
 
   window.onscroll = () => {
     setScrollStyle(
-      window.pageYOffset == 0
+      window.pageYOffset === 0
         ? [{width: "18rem"}, {fontSize: "1.5rem"}]
         : [{width: "8rem"}, {fontSize: "1.25rem"}]);
   };

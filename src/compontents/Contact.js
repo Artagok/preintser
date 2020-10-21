@@ -7,7 +7,7 @@ import {
   Col,
   Spinner,
   UncontrolledPopover,
-  PopoverHeader,
+  // PopoverHeader,
   PopoverBody
 } from "reactstrap";
 import { Formik, ErrorMessage } from "formik";
@@ -104,6 +104,7 @@ const Contact = props => {
                 <a
                   id="map-link"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.google.com/maps/place/Reformas+Preintser+Multiservicios,+SLU./@41.4036787,2.1797739,16z/data=!4m5!3m4!1s0x12a4a2df04318e79:0xa5d6a721c64de2a7!8m2!3d41.403481!4d2.182545"
                 >
                   <div id="map-link-btn">{lang.contact.box.map}</div>
@@ -313,9 +314,9 @@ const Transports = () => {
           >
             Metro
           </p>
-          <img src={L1} />
+          <img src={L1} alt=""/>
           <p style={{ fontSize: "1rem", marginBottom: ".7rem" }}>Glòries</p>
-          <img src={L2} />
+          <img src={L2} alt=""/>
           <p style={{ fontSize: "1rem" }}>Encants</p>
           <p style={{ fontSize: "1rem" }}>Monumental</p>
         </Col>

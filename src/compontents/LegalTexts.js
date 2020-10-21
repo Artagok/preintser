@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { LangContext } from "../lang-context";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+// import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import "./LegalTexts.css";
 import ie from "../assets/img/legal/browsers/ie.png";
 import ch from "../assets/img/legal/browsers/ch.png";
@@ -335,7 +335,7 @@ const _1 = props => (
       <li>
         <b>Cesión de datos</b>: Los datos personales serán tratados a través de
         servidores gestionados por{" "}
-        <a href="https://www.ionos.es/" target="_blank">
+        <a href="https://www.ionos.es/" target="_blank" rel="noopener noreferrer">
           1&amp;1
         </a>
         , que tendrá la consideración de Encargado del Tratamiento.
@@ -555,7 +555,7 @@ const _1 = props => (
     <p>
       Esta política de privacidad y de protección de datos ha sido redactada por
       EXPERTOS LOPD®,{" "}
-      <a href="https://www.expertoslopd.es/" target="_blank">
+      <a href="https://www.expertoslopd.es/" target="_blank" rel="noopener noreferrer">
         empresa de protección de datos
       </a>
       , a día 23:13 , y podrá variar en función de los cambios de normativa y

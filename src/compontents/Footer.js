@@ -37,7 +37,7 @@ const Footer = props => {
             <span onClick={toggle}>{lang.footer.legal[3]}</span>{" "}
           </div>
           <div className="footer-item">
-            <a target="_blank" href="https://github.com/artagok">
+            <a target="_blank" href="https://github.com/artagok" rel="noopener noreferrer">
               <span>{`By Artagok `}</span>
               <i className="fa fa-github-alt" aria-hidden="true"></i>
             </a>
@@ -50,7 +50,7 @@ const Footer = props => {
             size="lg"
           >
             <ModalBody>
-              <img src={certificate} width="80%" />
+              <img src={certificate} width="80%" alt=""/>
             </ModalBody>
           </Modal>
         </div>
