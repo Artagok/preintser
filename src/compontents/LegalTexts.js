@@ -607,11 +607,21 @@ const _2 = props => (
       navegadores más comunes, en los links que se incluyen a continuación:
     </p>
     <div className="cookies-browser-list">
-      <img src={ie} alt="ie" className="cookies-browser" />
-      <img src={ch} alt="ch" className="cookies-browser" />
-      <img src={ff} alt="ff" className="cookies-browser" />
-      <img src={sa} alt="sa" className="cookies-browser" />
-      <img src={op} alt="op" className="cookies-browser" />
+      <a href="https://privacy.microsoft.com/es-es/windows-10-microsoft-edge-and-privacy" target="_blank" rel="noopener noreferrer">
+        <img src={ie} alt="ie" className="cookies-browser" />
+      </a>
+      <a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank" rel="noopener noreferrer">
+        <img src={ch} alt="ch" className="cookies-browser" />
+      </a>
+      <a href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-?redirectlocale=en-US&redirectslug=Cookies" target="_blank" rel="noopener noreferrer">
+        <img src={ff} alt="ff" className="cookies-browser" />
+      </a>
+      <a href="http://www.apple.com/legal/privacy/es/cookies/" target="_blank" rel="noopener noreferrer">
+        <img src={sa} alt="sa" className="cookies-browser" />
+      </a>
+      <a href="https://www.opera.com/help/tutorials/security/cookies/#sitenav" target="_blank" rel="noopener noreferrer">
+        <img src={op} alt="op" className="cookies-browser" />
+      </a>
     </div>
 
     <h5>Aceptación de cookies</h5>

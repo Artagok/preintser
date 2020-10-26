@@ -41,6 +41,9 @@ const createFormSchema = lang => {
   return formSchema;
 };
 
+// Security token: 0d7acd32-63ee-4124-ab07-e97491d23a5a
+// This allow to encrypt the SMTP credentials and lock them to a single domain
+// By default, the SMTP connection is secure (STARTTLS) and over port 25. 
 const sendMail = (v, a) => {
   window.Email.send({
     /* ===  Static === */
@@ -142,7 +145,7 @@ const Contact = props => {
                 }) => (
                   <form onSubmit={handleSubmit}>
                     <Row>
-                      <Col md="6" className="form-col">
+                      <Col md="6" className="form-col form-col-half">
                         <label htmlFor="name">{lang.contact.form.name}</label>
                         <input
                           type="text"
@@ -157,7 +160,7 @@ const Contact = props => {
                         />
                         <ErrorMessage name="name" component={FormError} />
                       </Col>
-                      <Col md="6" className="form-col">
+                      <Col md="6" className="form-col form-col-half">
                         <label htmlFor="">{lang.contact.form.surname}</label>
                         <input
                           type="text"
@@ -176,7 +179,7 @@ const Contact = props => {
                       </Col>
                     </Row>
                     <Row>
-                      <Col md="6" className="form-col">
+                      <Col md="6" className="form-col form-col-half">
                         <label htmlFor="email">{lang.contact.form.email}</label>
                         <input
                           type="email"
@@ -191,7 +194,7 @@ const Contact = props => {
                         />
                         <ErrorMessage name="email" component={FormError} />
                       </Col>
-                      <Col md="6" className="form-col">
+                      <Col md="6" className="form-col form-col-half">
                         <label htmlFor="phone">{lang.contact.form.phone}</label>
                         <input
                           type="tel"
