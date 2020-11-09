@@ -32,9 +32,9 @@ const Footer = props => {
             <Link to="/cookies" onClick={() => window.scrollTo(0, 0)}>
               <span>{lang.footer.legal[2]}</span>
             </Link>
-            <pre> | </pre>
+            {/* <pre> | </pre> */}
             {/* === Certificat === */}
-            <span onClick={toggle}>{lang.footer.legal[3]}</span>{" "}
+            {/* <span onClick={toggle}>{lang.footer.legal[3]}</span>{" "} */}
           </div>
           <div className="footer-item">
             <a target="_blank" href="https://github.com/artagok" rel="noopener noreferrer">
