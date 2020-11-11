@@ -35,7 +35,7 @@ const Services = props => {
               <h2>{lang.services._1.name}</h2>
               <i className={`fa fa-angle-down ${angles[0]}`}></i>
             </div>
-            <Collapse isOpen={angles[0]}>
+            <Collapse isOpen={angles[0].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col md="6">{mapService(lang.services._1.list, 0)}</Col>
@@ -48,7 +48,7 @@ const Services = props => {
               <h2>{lang.services._2.name}</h2>
               <i className={`fa fa-angle-down ${angles[1]}`}></i>
             </div>
-            <Collapse isOpen={angles[1]}>
+            <Collapse isOpen={angles[1].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col md="6">{mapService(lang.services._2.list, 0)}</Col>
@@ -61,7 +61,7 @@ const Services = props => {
               <h2>{lang.services._3.name}</h2>
               <i className={`fa fa-angle-down ${angles[2]}`}></i>
             </div>
-            <Collapse isOpen={angles[2]}>
+            <Collapse isOpen={angles[2].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col md="6">{mapService(lang.services._3.list, 0)}</Col>
@@ -74,7 +74,7 @@ const Services = props => {
               <h2>{lang.services._4.name}</h2>
               <i className={`fa fa-angle-down ${angles[3]}`}></i>
             </div>
-            <Collapse isOpen={angles[3]}>
+            <Collapse isOpen={angles[3].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col md="6">{mapService(lang.services._4.list, 0)}</Col>
@@ -87,7 +87,7 @@ const Services = props => {
               <h2>{lang.services._5.name}</h2>
               <i className={`fa fa-angle-down ${angles[4]}`}></i>
             </div>
-            <Collapse isOpen={angles[4]}>
+            <Collapse isOpen={angles[4].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col md="6">{mapService(lang.services._5.list, 0)}</Col>
@@ -100,7 +100,7 @@ const Services = props => {
               <h2>{lang.services._6.name}</h2>
               <i className={`fa fa-angle-down ${angles[5]}`}></i>
             </div>
-            <Collapse isOpen={angles[5]}>
+            <Collapse isOpen={angles[5].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col md="6">{mapService(lang.services._6.list, 0)}</Col>
@@ -113,7 +113,7 @@ const Services = props => {
               <h2>{lang.services._7.name}</h2>
               <i className={`fa fa-angle-down ${angles[6]}`}></i>
             </div>
-            <Collapse isOpen={angles[6]}>
+            <Collapse isOpen={angles[6].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col md="6">{mapService(lang.services._7.list, 0)}</Col>
@@ -126,7 +126,7 @@ const Services = props => {
               <h2>{lang.services._8.name}</h2>
               <i className={`fa fa-angle-down ${angles[7]}`}></i>
             </div>
-            <Collapse isOpen={angles[7]}>
+            <Collapse isOpen={angles[7].length > 0}>
               <div className="content">
                 <Row noGutters={true}>
                   <Col lg="6">{mapService(lang.services._8.list, 0)}</Col>
