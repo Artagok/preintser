@@ -55,6 +55,8 @@ export const langs = {
         text: "Text",
         button: "Enviar",
         success_msg: "El seu missatge ha estat enviat. Moltes gràcies.",
+        failure_msg: `Disculpi les molèsties, hi ha hagut un error. Si us plau, envïi el correu directament a 
+        <b>reformaspreintser@gmail.com</b>`,
         checkbox:
           "Accepto el tractament de les meves dades amb la finalitat de rebre la ",
         checkbox_span: "informació sol·licitada",
@@ -224,6 +226,8 @@ export const langs = {
         text: "Texto",
         button: "Enviar",
         success_msg: "Su mensaje ha sido enviado. Muchas gracias.",
+        failure_msg: `Disculpe las molestias, ha habido un error. Por favor, envíe el correo directament a 
+        <b>reformaspreintser@gmail.com</b>`,
         checkbox:
           "Acepto el tratamiento de mis datos con la finalidad de recibir la ",
         checkbox_span: "información solicitada",
@@ -392,6 +396,8 @@ export const langs = {
         text: "Text",
         button: "Submit",
         success_msg: "Your message has been sent. Thank you.",
+        failure_msg: `Sorry for the inconvenience, there has been an error. Please send the email directly to 
+        <b>reformaspreintser@gmail.com</b>`,
         checkbox:
           "I accept the treatment of my data with the purpose of receiving the ",
         checkbox_span: "required information",

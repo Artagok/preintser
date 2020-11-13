@@ -42,44 +42,12 @@ const createFormSchema = lang => {
   return formSchema;
 };
 
-// Security token: 6118232d-3c76-4580-a42e-d07b5f139b7a
-// This allow to encrypt the SMTP credentials and lock them to a single domain
-// By default, the SMTP connection is secure (STARTTLS) and over port 25. 
-// const sendMail = (v, a) => {
-//   window.Email.send({
-//     /* ===  Static === */
-//     // SecureToken: "6118232d-3c76-4580-a42e-d07b5f139b7a",
-//     Host: "smtp.gmail.com",
-//     Username: "preintsermultiserveis@gmail.com",
-//     Password: "merceIpau2015bubos",
-//     // To: "reformaspreintser@gmail.com",
-//     To: "linkinpau.97@gmail.com",
-//     /* ===  Dynamic === */
-//     From: `${v.email}`,
-//     Subject: `Web Mail de ${v.name} ${v.surname}`,
-//     Body: `
-//     <b>Nombre</b>: ${v.name} <br>
-//     <b>Apellidos</b>: ${v.surname} <br>
-//     <b>Mail</b>: ${v.email} <br>
-//     <b>Teléfono</b>: ${v.phone || "---"} <br>
-//     <br><hr></hr><br>
-//     ${v.text.replace(/\n/gi, "<br>")}`
-//   })
-//   .then(msg => {console.log(msg); a.setSubmitting(false)})
-//   .catch(msg => console.log(msg));
-// };
-
 // Function executed when clicking 'Submit' form button
 // and all fields pass validations test
 // v = values, a = actions
 const onSubmit = (v, a) => {
   document.getElementById("submit-button").remove();
   document.getElementById("spinner").style.display = "";
-  setTimeout(() => {
-    document.getElementById("spinner").remove();
-    document.getElementById("success-msg").style.display = "inline-block";
-  }, 1000);
-  // Sending mail through emailJS
   const template = {
     name: v.name,
     surname: v.surname,
@@ -93,7 +61,17 @@ const onSubmit = (v, a) => {
     "service_rhpf91q",
     "template_gy2peus",
     template,
-    "user_OnmFuUJTFawgoWVjHlHpG");
+    "user_OnmFuUJTFawgoWVjHlHpG")
+    .then(
+      () => {
+        document.getElementById("spinner").remove();
+        document.getElementById("success-msg").style.display = "inline-block";
+      },
+      error => {
+        document.getElementById("spinner").remove();
+        document.getElementById("failure-msg").style.display = "inline-block";
+        console.log(error);
+      });
 };
 
 const Contact = props => {
@@ -299,6 +277,9 @@ const Contact = props => {
               <Spinner id="spinner" color="dark" style={{ display: "none" }} />
               <span id="success-msg" style={{ display: "none" }}>
                 {lang.contact.form.success_msg}
+              </span>
+              <span id="failure-msg" style={{ display: "none" }}>
+                {ReactHtmlParser(lang.contact.form.failure_msg)}
               </span>
             </div>
           </div>
