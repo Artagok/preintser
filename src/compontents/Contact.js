@@ -41,15 +41,16 @@ const createFormSchema = lang => {
   return formSchema;
 };
 
-// Security token: 0d7acd32-63ee-4124-ab07-e97491d23a5a
+// Security token: 6118232d-3c76-4580-a42e-d07b5f139b7a
 // This allow to encrypt the SMTP credentials and lock them to a single domain
 // By default, the SMTP connection is secure (STARTTLS) and over port 25. 
 const sendMail = (v, a) => {
   window.Email.send({
     /* ===  Static === */
-    Host: "smtp.gmail.com",
-    Username: "preintsermultiserveis@gmail.com",
-    Password: "merceIpau2015#",
+    SecureToken: "6118232d-3c76-4580-a42e-d07b5f139b7a",
+    // Host: "smtp.gmail.com",
+    // Username: "preintsermultiserveis@gmail.com",
+    // Password: "merceIpau2015bubos",
     // To: "reformaspreintser@gmail.com",
     To: "linkinpau.97@gmail.com",
     /* ===  Dynamic === */
@@ -62,7 +63,9 @@ const sendMail = (v, a) => {
     <b>Teléfono</b>: ${v.phone || "---"} <br>
     <br><hr></hr><br>
     ${v.text.replace(/\n/gi, "<br>")}`
-  }).then(() => a.setSubmitting(false));
+  })
+  .then(msg => {console.log(msg); a.setSubmitting(false)})
+  .catch(msg => console.log(msg));
 };
 
 // Function executed when clicking 'Submit' form button
