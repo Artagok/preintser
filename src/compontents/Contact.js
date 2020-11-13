@@ -12,6 +12,7 @@ import {
 } from "reactstrap";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import emailjs from 'emailjs-com';
 import L1 from "../assets/img/transports/L1.png";
 import L2 from "../assets/img/transports/L2.png";
 
@@ -44,29 +45,29 @@ const createFormSchema = lang => {
 // Security token: 6118232d-3c76-4580-a42e-d07b5f139b7a
 // This allow to encrypt the SMTP credentials and lock them to a single domain
 // By default, the SMTP connection is secure (STARTTLS) and over port 25. 
-const sendMail = (v, a) => {
-  window.Email.send({
-    /* ===  Static === */
-    SecureToken: "6118232d-3c76-4580-a42e-d07b5f139b7a",
-    // Host: "smtp.gmail.com",
-    // Username: "preintsermultiserveis@gmail.com",
-    // Password: "merceIpau2015bubos",
-    // To: "reformaspreintser@gmail.com",
-    To: "linkinpau.97@gmail.com",
-    /* ===  Dynamic === */
-    From: `${v.email}`,
-    Subject: `Web Mail de ${v.name} ${v.surname}`,
-    Body: `
-    <b>Nombre</b>: ${v.name} <br>
-    <b>Apellidos</b>: ${v.surname} <br>
-    <b>Mail</b>: ${v.email} <br>
-    <b>Teléfono</b>: ${v.phone || "---"} <br>
-    <br><hr></hr><br>
-    ${v.text.replace(/\n/gi, "<br>")}`
-  })
-  .then(msg => {console.log(msg); a.setSubmitting(false)})
-  .catch(msg => console.log(msg));
-};
+// const sendMail = (v, a) => {
+//   window.Email.send({
+//     /* ===  Static === */
+//     // SecureToken: "6118232d-3c76-4580-a42e-d07b5f139b7a",
+//     Host: "smtp.gmail.com",
+//     Username: "preintsermultiserveis@gmail.com",
+//     Password: "merceIpau2015bubos",
+//     // To: "reformaspreintser@gmail.com",
+//     To: "linkinpau.97@gmail.com",
+//     /* ===  Dynamic === */
+//     From: `${v.email}`,
+//     Subject: `Web Mail de ${v.name} ${v.surname}`,
+//     Body: `
+//     <b>Nombre</b>: ${v.name} <br>
+//     <b>Apellidos</b>: ${v.surname} <br>
+//     <b>Mail</b>: ${v.email} <br>
+//     <b>Teléfono</b>: ${v.phone || "---"} <br>
+//     <br><hr></hr><br>
+//     ${v.text.replace(/\n/gi, "<br>")}`
+//   })
+//   .then(msg => {console.log(msg); a.setSubmitting(false)})
+//   .catch(msg => console.log(msg));
+// };
 
 // Function executed when clicking 'Submit' form button
 // and all fields pass validations test
@@ -78,7 +79,21 @@ const onSubmit = (v, a) => {
     document.getElementById("spinner").remove();
     document.getElementById("success-msg").style.display = "inline-block";
   }, 1000);
-  sendMail(v, a);
+  // Sending mail through emailJS
+  const template = {
+    name: v.name,
+    surname: v.surname,
+    email: v.email,
+    phone: v.phone || "---",
+    text: v.text.replace(/\n/gi, "<br>"),
+    hr: "<hr></hr>",
+    br: "<br>"
+  };
+  emailjs.send(
+    "service_rhpf91q",
+    "template_gy2peus",
+    template,
+    "user_OnmFuUJTFawgoWVjHlHpG");
 };
 
 const Contact = props => {
