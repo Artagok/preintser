@@ -15,6 +15,7 @@ import * as Yup from "yup";
 import emailjs from 'emailjs-com';
 import L1 from "../assets/img/transports/L1.png";
 import L2 from "../assets/img/transports/L2.png";
+import { Link } from "react-router-dom";
 
 // Schema for Contact Form
 // With language parameter to customize
@@ -256,6 +257,10 @@ const Contact = props => {
                     </Row>
                     <p id="checkbox-tooltip">
                       {ReactHtmlParser(lang.contact.form.checkbox_tooltip)}
+                      <Link to="/privacy">
+                        {ReactHtmlParser(lang.contact.form.checkbox_link)}
+                      </Link>
+                      {"."}
                     </p>
                     <button type="submit" id="submit-button">
                       {lang.contact.form.button}

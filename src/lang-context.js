@@ -65,8 +65,8 @@ export const langs = {
         drets d'<b>accés</b>, <b>rectificació</b>, <b>limitació</b>, <b>oposició</b>, <b>portabilitat</b>, o <b>retirar</b> el
         consentimient enviant un email a <tt>reformaspreintser@gmail.com</tt>. També pots
         sol·licitar la tutela de drets davant l'Autoritat de Control (AEPD).<br>Pots consultar
-        informació addicional i detallada sobre protecció de dades a la nostra <a href="/privacy"><b>Política de
-        Privacitat</b></a>.`,
+        informació addicional i detallada sobre protecció de dades a la nostra `,
+        checkbox_link: "<b>Política de Privacitat</b>",
         errors: {
           empty: "No pot ser buit",
           min: "Massa curt",
@@ -235,8 +235,8 @@ export const langs = {
         derechos de <b>acceso</b>, <b>rectificación</b>, <b>limitación</b>, <b>oposición</b>, <b>portabilidad</b>, o <b>retirar</b> el
         consentimiento enviando un email a <tt>reformaspreintser@gmail.com</tt>. También puedes
         solicitar la tutela de derechos ante la Autoridad de Control (AEPD).<br>Puedes consultar
-        información adicional y detallada sobre protección de datos en nuestra <a href="/privacy"><b>Política de
-        Privacidad</b></a>.`,
+        información adicional y detallada sobre protección de datos en nuestra `,
+        checkbox_link: "<b>Política de Privacidad</b>",
         errors: {
           empty: "No puede ser vacío",
           min: "Demasiado corto",
@@ -403,7 +403,8 @@ export const langs = {
         rights of <b>access</b>, <b>amendment</b>, <b>limitation</b>, <b>opposition</b>, <b>portability</b>, or <b>withdrawal</b> of
         consent by sending an email to <tt>reformaspreintser@gmail.com</tt>. You can also
         apply for tutelage of rights before <i>Autoritat de Control (AEPD)</i>.<br>You can find
-        additional and detailed information about data protection in our <a href="/privacy"><b>Privacy Policy</b></a>.`,
+        additional and detailed information about data protection in our `,
+        checkbox_link: "<b>Privacy Policy</b>",
         errors: {
           empty: "Can't be empty",
           min: "Too short",
