@@ -84,7 +84,7 @@ const Contact = props => {
               width: "calc(75% + 2rem)",
               display: "flex",
               flexWrap: "wrap",
-              alignItems: "flex-start"
+              alignItems: "flex-start",
             }}
           >
             <div className="contact-box">
@@ -126,7 +126,7 @@ const Contact = props => {
                   email: "",
                   phone: "",
                   text: "",
-                  checkbox: false
+                  checkbox: false,
                 }}
                 validationSchema={createFormSchema(lang)}
                 onSubmit={(values, actions) => onSubmit(values, actions)}
@@ -137,7 +137,7 @@ const Contact = props => {
                   touched,
                   handleChange,
                   handleBlur,
-                  handleSubmit
+                  handleSubmit,
                 }) => (
                   <form onSubmit={handleSubmit}>
                     <Row>
@@ -231,7 +231,7 @@ const Contact = props => {
                             justifyContent: "center",
                             alignItems: "baseline",
                             marginTop: "1rem",
-                            textAlign: "left"
+                            textAlign: "left",
                           }}
                         >
                           <input
@@ -249,25 +249,14 @@ const Contact = props => {
                           />
                           <p style={{ fontSize: "1rem" }}>
                             {lang.contact.form.checkbox}
-                            <span id="checkbox-tooltip">
-                              {lang.contact.form.checkbox_span}
-                            </span>
                           </p>
-                          <UncontrolledPopover
-                            trigger="legacy"
-                            placement="auto-end"
-                            target="checkbox-tooltip"
-                          >
-                            <PopoverBody>
-                              {ReactHtmlParser(
-                                lang.contact.form.checkbox_tooltip
-                              )}
-                            </PopoverBody>
-                          </UncontrolledPopover>
                         </div>
                         <ErrorMessage name="checkbox" component={FormError} />
                       </Col>
                     </Row>
+                    <p id="checkbox-tooltip">
+                      {ReactHtmlParser(lang.contact.form.checkbox_tooltip)}
+                    </p>
                     <button type="submit" id="submit-button">
                       {lang.contact.form.button}
                     </button>
@@ -293,8 +282,8 @@ const FormError = props => (
   <p
     style={{
       fontSize: "1rem",
-      color: "#b30000",
-      textShadow: ".5px .5px darkred"
+      color: "#b40000",
+      // textShadow: ".5px .5px darkred"
     }}
   >
     {props.children}
