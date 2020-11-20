@@ -344,10 +344,16 @@ const _1 = props => (
     <h5>Menores de edad</h5>
     <hr></hr>
     <p>
-      Solo podrán usar este sitio web las personas mayores de 14 años. Según
-      obliga la LOPD y GDD, en caso de menores de 14 años, será condición
+      Solo podrán aportar datos personales en este sitio web las personas mayores de 
+      14 años. Según obliga la LOPD y GDD, en caso de menores de 14 años, será condición
       obligatoria el consentimiento de sus padres o tutores para que podamos
       tratar sus datos personales.
+    </p>
+    <p>
+      Por otra parte, solo podrán contratar nuestros servicios las personas mayores 
+      de 18 años. En caso de menores de 18 años, será condición obligatoria el 
+      consentimiento de sus padres o tutores legales para que podamos prestar los 
+      servicios ofertados, salvo que el menor esté emancipado.
     </p>
     <h5>Medidas de seguridad</h5>
     <hr></hr>
@@ -450,6 +456,10 @@ const _1 = props => (
       </b>
       , sin que ello afecte a la licitud del tratamiento basado en el
       consentimiento previo a su retirada.
+    </p>
+    <p>
+      Nos comprometemos a ejecutar todos estos derechos dentro del plazo legal 
+      máximo (1 mes).
     </p>
     <p>
       Si un Usuario considera que hay un problema con la forma en que “Reformas
@@ -587,16 +597,8 @@ const _2 = props => (
       instalación de las mismas. Para continuar sin cambios en la configuración
       de las cookies, simplemente, continúa navegando en la página web.
     </p>
-    <h5>Otras cookies</h5>
-    <hr></hr>
     <p>
-      En alguna página del Sitio Web se puede mostrar contenido embebido o
-      invocado a través del cual se pueden estar instalando cookies de terceros.
-      Por ejemplo, cookies de Gstatic. Cuando se incluyen estos contenidos en el
-      Sitio Web se intenta que la única finalidad de estas cookies sea técnica.
-      Los terceros que prestan los contenidos pueden decidir cambiar la
-      finalidad de estas cookies, por lo que se revisan estas páginas cada
-      cierto tiempo.
+      Actualmente, en esta web no se utilizan cookies propias ni de terceros.
     </p>
     <h5>Configuración de cookies</h5>
     <hr></hr>
