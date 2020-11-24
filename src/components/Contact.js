@@ -257,7 +257,7 @@ const Contact = props => {
                     </Row>
                     <p id="checkbox-tooltip">
                       {ReactHtmlParser(lang.contact.form.checkbox_tooltip)}
-                      <Link to="/privacy">
+                      <Link to="/privacy" onClick={() => window.scrollTo(0, 0)}>
                         {ReactHtmlParser(lang.contact.form.checkbox_link)}
                       </Link>
                       {"."}
