@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="app-wrapper">
       <LangContext.Provider value={[lang, changeLangAux]}>
-        <Router basename="/preintser">
+        <Router basename="/">
           <Switch>
             <Route exact path="/">
               <React.Fragment>
