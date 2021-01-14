@@ -564,11 +564,8 @@ const _1 = props => (
     <hr></hr>
     <p>
       Esta política de privacidad y de protección de datos ha sido redactada por
-      EXPERTOS LOPD®,{" "}
-      <a href="https://www.expertoslopd.es/" target="_blank" rel="noopener noreferrer">
-        empresa de protección de datos
-      </a>
-      , a día 23:13 , y podrá variar en función de los cambios de normativa y
+      EXPERTOS LOPD®, empresa de protección de datos, a día 23:13, 
+      y podrá variar en función de los cambios de normativa y
       jurisprudencia que se vayan produciendo, siendo responsabilidad del
       titular de los datos la lectura del documento actualizado, en orden a
       conocer sus derechos y obligaciones al respecto en cada momento.
