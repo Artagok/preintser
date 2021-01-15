@@ -10,7 +10,13 @@ const Footer = props => {
       {([lang, _]) => (
         <React.Fragment>
           <div className="webseal-wrapper">
-            <img src={webseal} alt="" id="webseal" />
+            <a 
+              target="_blank" 
+              href="https://www.expertoslopd.es/web-certificada/reformas-preintser/" 
+              rel="noopener noreferrer"
+            >
+              <img src={webseal} alt="" id="webseal" />
+            </a>
           </div>
           <div className="footer-wrapper">
             <div className="footer-item">
