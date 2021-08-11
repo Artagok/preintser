@@ -9,9 +9,9 @@ import ff from "../assets/img/legal/browsers/ff.png";
 import sa from "../assets/img/legal/browsers/sa.png";
 import op from "../assets/img/legal/browsers/op.png";
 
-const LegalTexts = props => {
+const LegalTexts = (props) => {
   // Title Bar =~ NavBar for this page
-  const TitleBar = props => (
+  const TitleBar = (props) => (
     <div className="title-bar">
       <div className="title-bar-item">
         <Link to="/" onClick={() => window.scrollTo(0, 0)}>
@@ -47,7 +47,7 @@ export default LegalTexts;
 // _1 --> privacy
 // _2 --> cookies
 // content = [_0, _1, _2]
-const _0 = props => (
+const _0 = (props) => (
   <React.Fragment>
     <p>
       En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de
@@ -261,7 +261,7 @@ const _0 = props => (
     </p>
   </React.Fragment>
 );
-const _1 = props => (
+const _1 = (props) => (
   <React.Fragment>
     <p>
       "Reformas Preintser" se encuentra profundamente comprometido con el
@@ -335,7 +335,11 @@ const _1 = props => (
       <li>
         <b>Cesión de datos</b>: Los datos personales serán tratados a través de
         servidores gestionados por{" "}
-        <a href="https://www.ionos.es/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.ionos.es/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           1&amp;1
         </a>
         , que tendrá la consideración de Encargado del Tratamiento.
@@ -344,16 +348,17 @@ const _1 = props => (
     <h5>Menores de edad</h5>
     <hr></hr>
     <p>
-      Solo podrán aportar datos personales en este sitio web las personas mayores de 
-      14 años. Según obliga la LOPD y GDD, en caso de menores de 14 años, será condición
-      obligatoria el consentimiento de sus padres o tutores para que podamos
-      tratar sus datos personales.
+      Solo podrán aportar datos personales en este sitio web las personas
+      mayores de 14 años. Según obliga la LOPD y GDD, en caso de menores de 14
+      años, será condición obligatoria el consentimiento de sus padres o tutores
+      para que podamos tratar sus datos personales.
     </p>
     <p>
-      Por otra parte, solo podrán contratar nuestros servicios las personas mayores 
-      de 18 años. En caso de menores de 18 años, será condición obligatoria el 
-      consentimiento de sus padres o tutores legales para que podamos prestar los 
-      servicios ofertados, salvo que el menor esté emancipado.
+      Por otra parte, solo podrán contratar nuestros servicios las personas
+      mayores de 18 años. En caso de menores de 18 años, será condición
+      obligatoria el consentimiento de sus padres o tutores legales para que
+      podamos prestar los servicios ofertados, salvo que el menor esté
+      emancipado.
     </p>
     <h5>Medidas de seguridad</h5>
     <hr></hr>
@@ -458,7 +463,7 @@ const _1 = props => (
       consentimiento previo a su retirada.
     </p>
     <p>
-      Nos comprometemos a ejecutar todos estos derechos dentro del plazo legal 
+      Nos comprometemos a ejecutar todos estos derechos dentro del plazo legal
       máximo (1 mes).
     </p>
     <p>
@@ -563,16 +568,23 @@ const _1 = props => (
     <h5>Validez</h5>
     <hr></hr>
     <p>
-      Esta política de privacidad y de protección de datos ha sido redactada por
-      EXPERTOS LOPD®, empresa de protección de datos, a día 23:13, 
-      y podrá variar en función de los cambios de normativa y
-      jurisprudencia que se vayan produciendo, siendo responsabilidad del
-      titular de los datos la lectura del documento actualizado, en orden a
-      conocer sus derechos y obligaciones al respecto en cada momento.
+      Esta política de privacidad y de protección de datos ha sido redactada por{" "}
+      <a
+        target="_blank"
+        href="https://www.expertoslopd.es"
+        rel="noopener noreferrer"
+      >
+        EXPERTOS LOPD®
+      </a>
+      , empresa de protección de datos, a día 23:13, y podrá variar en función
+      de los cambios de normativa y jurisprudencia que se vayan produciendo,
+      siendo responsabilidad del titular de los datos la lectura del documento
+      actualizado, en orden a conocer sus derechos y obligaciones al respecto en
+      cada momento.
     </p>
   </React.Fragment>
 );
-const _2 = props => (
+const _2 = (props) => (
   <React.Fragment>
     <p>
       En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la
@@ -606,19 +618,39 @@ const _2 = props => (
       navegadores más comunes, en los links que se incluyen a continuación:
     </p>
     <div className="cookies-browser-list">
-      <a href="https://privacy.microsoft.com/es-es/windows-10-microsoft-edge-and-privacy" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://privacy.microsoft.com/es-es/windows-10-microsoft-edge-and-privacy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={ie} alt="ie" className="cookies-browser" />
       </a>
-      <a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://support.google.com/chrome/answer/95647?hl=es"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={ch} alt="ch" className="cookies-browser" />
       </a>
-      <a href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-?redirectlocale=en-US&redirectslug=Cookies" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://support.mozilla.org/es/kb/cookies-informacion-que-los-sitios-web-guardan-en-?redirectlocale=en-US&redirectslug=Cookies"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={ff} alt="ff" className="cookies-browser" />
       </a>
-      <a href="http://www.apple.com/legal/privacy/es/cookies/" target="_blank" rel="noopener noreferrer">
+      <a
+        href="http://www.apple.com/legal/privacy/es/cookies/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={sa} alt="sa" className="cookies-browser" />
       </a>
-      <a href="https://www.opera.com/help/tutorials/security/cookies/#sitenav" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.opera.com/help/tutorials/security/cookies/#sitenav"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={op} alt="op" className="cookies-browser" />
       </a>
     </div>

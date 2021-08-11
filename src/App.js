@@ -22,7 +22,7 @@ function App() {
   const [lang, changeLang] = useState(
     langs[localStorage.getItem("lang") || "ca"]
   );
-  const changeLangAux = l => {
+  const changeLangAux = (l) => {
     changeLang(langs[l]);
     localStorage.setItem("lang", l);
   };
@@ -55,6 +55,7 @@ function App() {
             <Route path="/legal"   render={() => <LegalTexts type={0} />} />
             <Route path="/privacy" render={() => <LegalTexts type={1} />} />
             <Route path="/cookies" render={() => <LegalTexts type={2} />} />
+            <Route render={() => <p>404</p>} />
           </Switch>
           <Footer />
         </Router>

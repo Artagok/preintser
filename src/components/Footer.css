@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 #webseal {
   width: 200px;
