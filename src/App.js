@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LegalTexts from "./components/LegalTexts";
+import NotFound from "./components/NotFound";
 import bg1 from "./assets/img/backgrounds/bg1_blur.jpg";
 import bg2 from "./assets/img/backgrounds/bg2_blur.jpg";
 import bg3 from "./assets/img/backgrounds/bg3_blur.jpg";
@@ -55,7 +56,7 @@ function App() {
             <Route path="/legal"   render={() => <LegalTexts type={0} />} />
             <Route path="/privacy" render={() => <LegalTexts type={1} />} />
             <Route path="/cookies" render={() => <LegalTexts type={2} />} />
-            <Route render={() => <p>404</p>} />
+            <Route render={() => <NotFound />} />
           </Switch>
           <Footer />
         </Router>

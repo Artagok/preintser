@@ -170,7 +170,12 @@ export const langs = {
         "Certificat"
       ]
     },
-    legalTexts: {}
+    legalTexts: {},
+    notFound: {
+      h1: "No s'ha trobat",
+      h3: "Aquesta pàgina no existeix",
+      link: ["Clica ", "aquí", " per tornar a la pàgina principal"]
+    }
   },
   es: {
     navbar: {
@@ -340,7 +345,12 @@ export const langs = {
         "Certificado"
       ]
     },
-    legalTexts: {}
+    legalTexts: {},
+    notFound: {
+      h1: "No encontrado",
+      h3: "Esta página no existe",
+      link: ["Clica ", "aquí", " para volver a la página principal"]
+    }
   },
   en: {
     navbar: {
@@ -509,7 +519,12 @@ export const langs = {
     footer: {
       legal: ["Legal Notice", "Privacy Policy", "Cookies Policy", "Certificate"]
     },
-    legalTexts: {}
+    legalTexts: {},
+    notFound: {
+      h1: "Not found",
+      h3: "This page doesn't exist",
+      link: ["Click ", "here", " to return to the main page"]
+    }
   }
 };
 
