@@ -17,7 +17,7 @@ export const langs = {
     about: {
       textbox1: {
         title: "L'empresa",
-        content1: `Som <b>Preintser Multiserveis S.L.U.</b>, empresa 
+        content1: `Som <b>Preintser Multiserveis S.L.</b>, empresa 
         dedicada a les <b>reformes</b> i les <b>rehabilitacions integrals</b> 
         per a particulars, comunitats de veïns i sector industrial. 
         Rehabilitem locals, aparcaments, naus i molt més.`,
@@ -59,7 +59,7 @@ export const langs = {
         <b>reformaspreintser@gmail.com</b>`,
         checkbox:
           "Accepto el tractament de les meves dades amb la finalitat de rebre la informació sol·licitada",
-        checkbox_tooltip: `A Reformes Preintser (titularitat de Preintser Multiservicios, S.L.U.) tractarem la
+        checkbox_tooltip: `A Reformes Preintser (titularitat de Preintser Multiservicios, S.L.) tractarem la
         informació que ens facilitis amb la finalitat d'enviar-te <b>informació relacionada amb
         la teva sol·licitud</b> sobre els nostres productes i/o serveis. Podràs exercir els
         drets d'<b>accés</b>, <b>rectificació</b>, <b>limitació</b>, <b>oposició</b>, <b>portabilitat</b>, o <b>retirar</b> el
@@ -191,7 +191,7 @@ export const langs = {
     about: {
       textbox1: {
         title: "La empresa",
-        content1: `Somos <b>Preintser Multiserveis S.L.U.</b>, empresa 
+        content1: `Somos <b>Preintser Multiserveis S.L.</b>, empresa 
         dedicada a las <b>reformas</b> y las <b>rehabilitaciones integrales</b> 
         para particulares, comunidades de vecinos y sector industrial. 
         Rehabilitamos locales, aparcamientos, naves y mucho más.`,
@@ -234,7 +234,7 @@ export const langs = {
         <b>reformaspreintser@gmail.com</b>`,
         checkbox:
           "Acepto el tratamiento de mis datos con la finalidad de recibir la información solicitada",
-        checkbox_tooltip: `En Reformas Preintser (titularidad de Preintser Multiservicios, S.L.U.) trataremos la
+        checkbox_tooltip: `En Reformas Preintser (titularidad de Preintser Multiservicios, S.L.) trataremos la
         información que nos facilites con la finalidad de enviarte <b>información relacionada con
         tu solicitud</b> sobre nuestros productos y/o servicios. Podrás ejercer los
         derechos de <b>acceso</b>, <b>rectificación</b>, <b>limitación</b>, <b>oposición</b>, <b>portabilidad</b>, o <b>retirar</b> el
@@ -366,7 +366,7 @@ export const langs = {
     about: {
       textbox1: {
         title: "Our company",
-        content1: `We are <b>Preintser Multiserveis S.L.U.</b>, a company dedicated to
+        content1: `We are <b>Preintser Multiserveis S.L.</b>, a company dedicated to
         <b>reforming</b> and <b>integral rehabilitations</b> for individuals, 
         neighborhood communities and the industrial sector.
         We rehabilitate premises, parkings, industrial buildings and much more.`,
@@ -408,7 +408,7 @@ export const langs = {
         <b>reformaspreintser@gmail.com</b>`,
         checkbox:
           "I accept the treatment of my data with the purpose of receiving the required information",
-        checkbox_tooltip: `At Reformes Preintser (titularity of Preintser Multiservicios, S.L.U.) we will treat the
+        checkbox_tooltip: `At Reformes Preintser (titularity of Preintser Multiservicios, S.L.) we will treat the
         information you provide us with the purpose of sending you <b>information related to your request</b> of our products and/or services. You can exercise your
         rights of <b>access</b>, <b>amendment</b>, <b>limitation</b>, <b>opposition</b>, <b>portability</b>, or <b>withdrawal</b> of
         consent by sending an email to <tt>reformaspreintser@gmail.com</tt>. You can also

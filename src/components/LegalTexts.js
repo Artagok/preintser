@@ -52,7 +52,7 @@ const _0 = (props) => (
     <p>
       En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de
       Servicios de la Sociedad de la Información y del Comercio Electrónico
-      (LSSICE), Preintser Multiservicios, S.L.U. (en adelante, "Reformas
+      (LSSICE), Preintser Multiservicios, S.L. (en adelante, "Reformas
       Preintser"), Responsable de esta web, pone a disposición de los Usuarios
       la presente información, para definir sus Condiciones de Uso.
     </p>
@@ -66,7 +66,7 @@ const _0 = (props) => (
     <hr></hr>
     <ul>
       <li>
-        <b>Denominación Social</b>: Preintser Multiservicios, S.L.U.
+        <b>Denominación Social</b>: Preintser Multiservicios, S.L.
       </li>
       <li>
         <b>Nombre Comercial</b>: Reformas Preintser
@@ -281,7 +281,7 @@ const _1 = (props) => (
     </p>
     <ul>
       <li>
-        <b>Denominación Social</b>: Preintser Multiservicios, S.L.U.
+        <b>Denominación Social</b>: Preintser Multiservicios, S.L.
       </li>
       <li>
         <b>CIF</b>: B64472244

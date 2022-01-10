@@ -4,15 +4,15 @@ import { LangContext } from "../lang-context";
 import "./Footer.css";
 import webseal from "../assets/img/legal/webseal.png";
 
-const Footer = props => {
+const Footer = (props) => {
   return (
     <LangContext.Consumer>
       {([lang, _]) => (
         <React.Fragment>
           <div className="webseal-wrapper">
-            <a 
-              target="_blank" 
-              href="https://www.expertoslopd.es/web-certificada/reformas-preintser/" 
+            <a
+              target="_blank"
+              href="https://www.expertoslopd.es/web-certificada/reformas-preintser/"
               rel="noopener noreferrer"
             >
               <img src={webseal} alt="" id="webseal" />
@@ -20,7 +20,7 @@ const Footer = props => {
           </div>
           <div className="footer-wrapper">
             <div className="footer-item">
-              <p>{`Copyright © ${new Date().getFullYear()} Preintser Multiservicios S.L.U.`}</p>
+              <p>{`Copyright © ${new Date().getFullYear()} Preintser Multiservicios S.L.`}</p>
             </div>
             <div className="footer-item" style={{ padding: ".5rem 0rem" }}>
               {/* === Avis Legal === */}
@@ -42,12 +42,16 @@ const Footer = props => {
               {/* <span onClick={toggle}>{lang.footer.legal[3]}</span>{" "} */}
             </div>
             <div className="footer-item">
-              <a target="_blank" href="https://github.com/artagok" rel="noopener noreferrer">
+              <a
+                target="_blank"
+                href="https://github.com/artagok"
+                rel="noopener noreferrer"
+              >
                 <span>{`By Artagok `}</span>
                 <i className="fa fa-github-alt" aria-hidden="true"></i>
               </a>
             </div>
-          </div> 
+          </div>
         </React.Fragment>
       )}
     </LangContext.Consumer>
