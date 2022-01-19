@@ -4,14 +4,14 @@
   justify-content: center;
 }
 .contact-box {
-  min-width: 250px;
-  width: 30%;
+  /* min-width: 370px; */
+  /* width: 30%; */
   border: 1px solid black;
   text-align: center;
   word-wrap: break-word;
   box-sizing: border-box;
   padding: 2rem;
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
   background: linear-gradient(
     180deg,
     rgba(255, 0, 0, 0.2) 0%,
@@ -74,8 +74,8 @@
 
 /* ============ Contact Form ============ */
 #form-wrapper {
-  width: 60%;
-  flex-grow: 1;
+  /* width: 60%; */
+  /* flex-grow: 1; */
   font-size: 1.2rem;
 }
 .form-col {
@@ -112,8 +112,8 @@ input[type="checkbox"] {
   transform: scale(1.5);
 }
 #checkbox-tooltip {
-  font-size: .75rem;
-  margin: .5rem 0 0 0;
+  font-size: 0.75rem;
+  margin: 0.5rem 0 0 0;
 }
 .popover {
   max-width: 300px !important;
@@ -137,4 +137,15 @@ input[type="checkbox"] {
   box-shadow: 0px 0px 10px 10px rgba(255, 0, 0, 0.25);
   background-color: rgba(255, 0, 0, 0.25);
   font-size: 1rem;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 768px) {
+  .contact-box {
+    width: 100%;
+  }
+  .contact-box p {
+    font-size: 1.2rem;
+  }
 }

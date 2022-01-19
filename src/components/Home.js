@@ -8,8 +8,9 @@ import preintser2 from "../assets/img/carousel/preintser2.jpg";
 import preintser3 from "../assets/img/carousel/preintser3.jpg";
 import preintser4 from "../assets/img/carousel/preintser4.jpg";
 import preintser5 from "../assets/img/carousel/preintser5.jpg";
+import { MD_BREAKPOINT } from "../const.js";
 
-const Home = props => {
+const Home = ({ size }) => {
   return (
     <LangContext.Consumer>
       {([lang, _]) => (
@@ -19,9 +20,9 @@ const Home = props => {
             showArrows={true}
             showStatus={false}
             showIndicators={true}
-            showThumbs={true}
+            showThumbs={size.w >= MD_BREAKPOINT}
             infiniteLoop={true}
-            width={"75%"}
+            width={size.w >= MD_BREAKPOINT ? "75%" : "95%"}
             autoPlay={true}
             stopOnHover={false}
             interval={4500}

@@ -12,29 +12,38 @@ import {
   Dropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
+  DropdownItem,
 } from "reactstrap";
 import * as Scroll from "react-scroll";
 import ca from "../assets/img/lang/ca.png";
 import es from "../assets/img/lang/es.png";
 import en from "../assets/img/lang/en.png";
+import { MD_BREAKPOINT } from "../const.js";
 
-const Navbar = props => {
+const Navbar = ({ size }) => {
   // State
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
   const [scrollStyle, setScrollStyle] = useState([
-    {width: "18rem"}, 
-    {fontSize: "1.5rem"}
+    { width: size.w >= MD_BREAKPOINT ? "18rem" : "8rem" },
+    {
+      fontSize: size.w >= MD_BREAKPOINT ? "1.5rem" : "1.25rem",
+    },
   ]);
 
   window.onscroll = () => {
     setScrollStyle(
-      window.pageYOffset === 0
-        ? [{width: "18rem"}, {fontSize: "1.5rem"}]
-        : [{width: "8rem"}, {fontSize: "1.25rem"}]);
+      window.pageYOffset === 0 && size.w >= MD_BREAKPOINT
+        ? [{ width: "18rem" }, { fontSize: "1.5rem" }]
+        : [{ width: "8rem" }, { fontSize: "1.25rem" }]
+    );
+  };
+
+  // Close dropdown when clicking a NavItem
+  const closeDropdown = () => {
+    console.log("HOLA!");
   };
 
   return (
@@ -44,11 +53,20 @@ const Navbar = props => {
           <NavbarBrand href="/" style={scrollStyle[0]}>
             <img alt="" src={lang.navbar.logo} className="logo-navbar"></img>
           </NavbarBrand>
-          <NavbarToggler onClick={toggleMenu} />
+          <NavbarToggler
+            onClick={toggleMenu}
+            children={
+              <i
+                className="fa fa-bars"
+                aria-hidden="true"
+                style={{ fontSize: "2rem" }}
+              ></i>
+            }
+          />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               {/*=== Home ===*/}
-              <NavItem>
+              <NavItem onClick={() => closeDropdown()}>
                 <Scroll.Link
                   to="home"
                   smooth={true}
@@ -135,13 +153,13 @@ const Navbar = props => {
   );
 };
 
-const LanguageItem = props => {
+const LanguageItem = (props) => {
   return (
     <div
       className="language-item"
       style={{
         display: "flex",
-        alignItems: "center"
+        alignItems: "center",
       }}
     >
       {props.children}

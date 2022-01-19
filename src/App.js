@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLayoutEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { LangContext, langs } from "./lang-context";
 import "./App.css";
@@ -38,6 +38,19 @@ function App() {
     }")`;
   }, []);
 
+  // Keep track of window size to serve it as props
+  // for the App children components
+  const [size, setSize] = useState({
+    w: window.innerWidth,
+    h: window.innerHeight,
+  });
+  useLayoutEffect(() => {
+    const resize = () =>
+      setSize({ w: window.innerWidth, h: window.innerHeight });
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, []);
+
   return (
     <div className="app-wrapper">
       <LangContext.Provider value={[lang, changeLangAux]}>
@@ -45,11 +58,11 @@ function App() {
           <Switch>
             <Route exact path="/">
               <React.Fragment>
-                <Navbar />
-                <Home />
+                <Navbar size={size} />
+                <Home size={size} />
                 <About />
                 <Services />
-                <Contact />
+                <Contact size={size} />
               </React.Fragment>
             </Route>
             {/* prettier-ignore */}

@@ -6,14 +6,14 @@
 .navbar-wrapper .nav-item {
   text-align: center;
 }
-.collapse li {
+.navbar-collapse li {
   margin: 0 0.25rem;
 }
 
-.collapse button:focus {
+.navbar-collapse button:focus {
   outline: 0;
 }
-.collapse a {
+.navbar-collapse a {
   color: black;
   font-weight: bold;
   font-size: 1.25rem;
@@ -57,6 +57,12 @@
   padding: 0.5rem 0.5rem;
   cursor: pointer;
   text-decoration: none;
+}
+.navbar-link:hover,
+.navbar-link:visited,
+.navbar-link:active {
+  text-decoration: none;
+  color: black;
 }
 /* Underline effect on hover */
 .navbar-link:after {

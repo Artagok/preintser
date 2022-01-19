@@ -8,19 +8,20 @@ import {
   Spinner,
   UncontrolledPopover,
   // PopoverHeader,
-  PopoverBody
+  PopoverBody,
 } from "reactstrap";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import L1 from "../assets/img/transports/L1.png";
 import L2 from "../assets/img/transports/L2.png";
 import { Link } from "react-router-dom";
+import { MD_BREAKPOINT } from "../const.js";
 
 // Schema for Contact Form
 // With language parameter to customize
 // err msg depending on the language
-const createFormSchema = lang => {
+const createFormSchema = (lang) => {
   const formSchema = Yup.object().shape({
     name: Yup.string()
       .min(1, lang.contact.form.errors.min)
@@ -38,7 +39,7 @@ const createFormSchema = lang => {
       lang.contact.form.errors.phone
     ),
     text: Yup.string().required(lang.contact.form.errors.required),
-    checkbox: Yup.boolean().oneOf([true], lang.contact.form.errors.required)
+    checkbox: Yup.boolean().oneOf([true], lang.contact.form.errors.required),
   });
   return formSchema;
 };
@@ -56,39 +57,49 @@ const onSubmit = (v, a) => {
     phone: v.phone || "---",
     text: v.text.replace(/\n/gi, "<br>"),
     hr: "<hr></hr>",
-    br: "<br>"
+    br: "<br>",
   };
-  emailjs.send(
-    "service_rhpf91q",
-    "template_gy2peus",
-    template,
-    "user_OnmFuUJTFawgoWVjHlHpG")
+  emailjs
+    .send(
+      "service_rhpf91q",
+      "template_gy2peus",
+      template,
+      "user_OnmFuUJTFawgoWVjHlHpG"
+    )
     .then(
       () => {
         document.getElementById("spinner").remove();
         document.getElementById("success-msg").style.display = "inline-block";
       },
-      error => {
+      (error) => {
         document.getElementById("spinner").remove();
         document.getElementById("failure-msg").style.display = "inline-block";
         console.log(error);
-      });
+      }
+    );
 };
 
-const Contact = props => {
+const Contact = ({ size }) => {
   return (
     <LangContext.Consumer>
       {([lang, _]) => (
         <div className="contact-wrapper" id="contact">
           <div
             style={{
-              width: "calc(75% + 2rem)",
+              width: size.w >= MD_BREAKPOINT ? "75%" : "95%",
               display: "flex",
-              flexWrap: "wrap",
+              flexWrap: size.w >= 1200 ? "nowrap" : "wrap",
+              justifyContent: size.w >= 1200 ? "initial" : "center",
               alignItems: "flex-start",
+              gap: "2rem",
             }}
           >
-            <div className="contact-box">
+            <div
+              className="contact-box"
+              style={{
+                padding: "2rem 2.5rem",
+              }}
+            >
               <h2>{lang.contact.box.title}</h2>
               <hr></hr>
               <div className="grid-container">
@@ -283,7 +294,7 @@ const Contact = props => {
   );
 };
 
-const FormError = props => (
+const FormError = (props) => (
   <p
     style={{
       fontSize: "1rem",
@@ -305,14 +316,14 @@ const Transports = () => {
               fontSize: "1rem",
               fontWeight: "bold",
               textDecoration: "underline",
-              marginBottom: ".7rem"
+              marginBottom: ".7rem",
             }}
           >
             Metro
           </p>
-          <img src={L1} alt=""/>
+          <img src={L1} alt="" />
           <p style={{ fontSize: "1rem", marginBottom: ".7rem" }}>Glòries</p>
-          <img src={L2} alt=""/>
+          <img src={L2} alt="" />
           <p style={{ fontSize: "1rem" }}>Encants</p>
           <p style={{ fontSize: "1rem" }}>Monumental</p>
         </Col>
@@ -322,7 +333,7 @@ const Transports = () => {
               fontSize: "1rem",
               fontWeight: "bold",
               textDecoration: "underline",
-              marginBottom: ".7rem"
+              marginBottom: ".7rem",
             }}
           >
             Bus
@@ -332,7 +343,7 @@ const Transports = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
             }}
           >
             <p
@@ -341,7 +352,7 @@ const Transports = () => {
                 backgroundColor: "rgb(119,221,119)",
                 border: "1px solid black",
                 padding: "0.2rem 0.2rem",
-                marginBottom: ".5rem"
+                marginBottom: ".5rem",
               }}
             >
               V23
@@ -351,7 +362,7 @@ const Transports = () => {
                 fontSize: "1.2rem",
                 backgroundColor: "rgb(255,105,97)",
                 border: "1px solid black",
-                padding: "0.2rem 0.55rem"
+                padding: "0.2rem 0.55rem",
               }}
             >
               62
