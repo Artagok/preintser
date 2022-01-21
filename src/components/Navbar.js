@@ -41,9 +41,11 @@ const Navbar = ({ size }) => {
     );
   };
 
-  // Close dropdown when clicking a NavItem
+  // Close dropdown Menu when clicking a NavItem
   const closeDropdown = () => {
-    console.log("HOLA!");
+    if (!(size.w >= MD_BREAKPOINT) && isOpen) {
+      setIsOpen(false);
+    }
   };
 
   return (
@@ -66,12 +68,13 @@ const Navbar = ({ size }) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
               {/*=== Home ===*/}
-              <NavItem onClick={() => closeDropdown()}>
+              <NavItem>
                 <Scroll.Link
                   to="home"
                   smooth={true}
                   className="navbar-link"
                   style={scrollStyle[1]}
+                  onClick={closeDropdown}
                 >
                   {lang.navbar.home}
                 </Scroll.Link>
@@ -83,6 +86,7 @@ const Navbar = ({ size }) => {
                   smooth={true}
                   className="navbar-link"
                   style={scrollStyle[1]}
+                  onClick={closeDropdown}
                 >
                   {lang.navbar.about}
                 </Scroll.Link>
@@ -94,6 +98,7 @@ const Navbar = ({ size }) => {
                   smooth={true}
                   className="navbar-link"
                   style={scrollStyle[1]}
+                  onClick={closeDropdown}
                 >
                   {lang.navbar.services}
                 </Scroll.Link>
@@ -105,6 +110,7 @@ const Navbar = ({ size }) => {
                   smooth={true}
                   className="navbar-link"
                   style={scrollStyle[1]}
+                  onClick={closeDropdown}
                 >
                   {lang.navbar.contact}
                 </Scroll.Link>
@@ -114,6 +120,7 @@ const Navbar = ({ size }) => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://twitter.com/preintser"
+              id="twitter-wrapper"
             >
               <i
                 id="twitter-button"
