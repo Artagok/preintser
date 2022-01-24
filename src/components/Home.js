@@ -30,12 +30,6 @@ const Home = ({ size }) => {
             className="carousel-wrapper"
           >
             <div>
-              <img alt="" src={preintser4} />
-            </div>
-            <div>
-              <img alt="" src={preintser5} />
-            </div>
-            <div>
               <img alt="" src={preintser1} />
             </div>
             <div>
@@ -43,6 +37,12 @@ const Home = ({ size }) => {
             </div>
             <div>
               <img alt="" src={preintser3} />
+            </div>
+            <div>
+              <img alt="" src={preintser4} />
+            </div>
+            <div>
+              <img alt="" src={preintser5} />
             </div>
           </Carousel>
         </div>
