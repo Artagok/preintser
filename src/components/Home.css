@@ -25,8 +25,10 @@
   display: flex;
   justify-content: center;
 }
-.carousel .slide img {
+.carousel-img {
   max-height: 750px;
+  width: 100%;
+  height: auto;
 }
 .carousel-slider {
   /* offset-x | offset-y | blur-radius | spread-radius | color */
