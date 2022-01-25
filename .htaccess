@@ -1,0 +1,17 @@
+RewriteEngine On
+# ============ Force HTTPS ============ #
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://reformaspreintser.es/$1 [R=301,L]
+# ============ Redirect reformaspreintser.es/* to index.html ============ #
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule . /index.html [L]
+# ============ Caching Policy ============ #
+<FilesMatch "\.(?i:gif|jpe?g|png|ico|css|js|swf)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "max-age=7776000, public, must-revalidate"
+  </IfModule>
+</FilesMatch>
