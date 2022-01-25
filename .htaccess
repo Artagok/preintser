@@ -2,6 +2,11 @@ RewriteEngine On
 # ============ Force HTTPS ============ #
 RewriteCond %{SERVER_PORT} !=443
 RewriteRule ^(.*)$ https://reformaspreintser.es/$1 [R=301,L]
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=7776000; includeSubdomains;"
+  # No embedding by others <iframe>, etc
+  Header set X-Frame-Options "DENY" 
+</IfModule>
 # ============ Redirect reformaspreintser.es/* to index.html ============ #
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
