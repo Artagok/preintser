@@ -76,7 +76,7 @@ const Home = ({ size }) => {
                   alt={`carousel-${i + 1}`}
                   src={lg}
                   srcSet={`${lg} 1920w, ${CAROUSEL_IMAGES.md[i]} 960w, ${CAROUSEL_IMAGES.sm[i]} 480w`}
-                  sizes="(max-height: 768px) 95vw, 75vw"
+                  sizes="(max-width: 768px) 95vw, 75vw"
                   className="carousel-img"
                 />
               </div>
