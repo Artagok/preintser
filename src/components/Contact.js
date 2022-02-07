@@ -97,7 +97,7 @@ const Contact = ({ size }) => {
             <div
               className="contact-box"
               style={{
-                padding: "2rem 2.5rem",
+                // padding: "2rem 2.5rem",
               }}
             >
               <h2>{lang.contact.box.title}</h2>
