@@ -20,11 +20,14 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && npm run-script build-echo && npm run-script build-copy && npm run-script build-insert",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run-script build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build-echo": "printf reformaspreintser.es > build/CNAME",
+    "build-copy": "cp src/helpers/404.html build/",
+    "build-insert": "sh -c 'sed -i \"s|</head>|$(cat src/helpers/navigate_script_index.txt)|\" build/index.html'"
   },
   "eslintConfig": {
     "extends": "react-app"
