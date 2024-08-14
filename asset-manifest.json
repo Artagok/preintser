@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "./static/css/main.71bbc8c8.chunk.css",
-    "main.js": "./static/js/main.9c310405.chunk.js",
+    "main.js": "./static/js/main.31abb965.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.be46164c.js",
     "static/css/2.12b9dd4a.chunk.css": "./static/css/2.12b9dd4a.chunk.css",
     "static/js/2.00b3071e.chunk.js": "./static/js/2.00b3071e.chunk.js",
     "index.html": "./index.html",
-    "precache-manifest.bd3a815eacef4f1d01d79c230bfcbf62.js": "./precache-manifest.bd3a815eacef4f1d01d79c230bfcbf62.js",
+    "precache-manifest.4a6fa52e18833e296bee079eb40eafbb.js": "./precache-manifest.4a6fa52e18833e296bee079eb40eafbb.js",
     "service-worker.js": "./service-worker.js",
     "static/js/2.00b3071e.chunk.js.LICENSE.txt": "./static/js/2.00b3071e.chunk.js.LICENSE.txt",
     "static/media/ampb.png": "./static/media/ampb.d272b600.png",
@@ -42,13 +42,13 @@
     "static/media/rera.png": "./static/media/rera.b6d093d3.png",
     "static/media/sa.png": "./static/media/sa.f4c00e9b.png",
     "static/media/Services.css": "./static/media/services8.dc3084a3.jpg",
-    "static/media/webseal.png": "./static/media/webseal.83d276ac.png"
+    "static/media/webseal.png": "./static/media/webseal.58b18aa3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.be46164c.js",
     "static/css/2.12b9dd4a.chunk.css",
     "static/js/2.00b3071e.chunk.js",
     "static/css/main.71bbc8c8.chunk.css",
-    "static/js/main.9c310405.chunk.js"
+    "static/js/main.31abb965.chunk.js"
   ]
 }
