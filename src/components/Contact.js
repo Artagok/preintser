@@ -116,7 +116,7 @@ const Contact = ({ size }) => {
                   id="map-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.google.com/maps/place/Reformas+Preintser+Multiservicios,+SLU./@41.4036787,2.1797739,16z/data=!4m5!3m4!1s0x12a4a2df04318e79:0xa5d6a721c64de2a7!8m2!3d41.403481!4d2.182545"
+                  href="https://maps.app.goo.gl/PG8vTJ4pda7NR4q57"
                 >
                   <div id="map-link-btn">{lang.contact.box.map}</div>
                 </a>

@@ -79,7 +79,7 @@ const _0 = (props) => (
         207 Hoja B342388
       </li>
       <li>
-        <b>Domicilio Social</b>: C/ Castillejos, 202 - Local 2 – 08013 Barcelona
+        <b>Domicilio Social</b>: C/ Garrotxa, 7-9 - Local 6 – 08041 Barcelona
       </li>
       <li>
         <b>Actividad</b>: Construcción
@@ -287,7 +287,7 @@ const _1 = (props) => (
         <b>CIF</b>: B64472244
       </li>
       <li>
-        <b>Domicilio Social</b>: C/ Castillejos, 202 - Local 2 – 08013 Barcelona
+        <b>Domicilio Social</b>: C/ Garrotxa, 7-9 - Local 6 – 08041 Barcelona
       </li>
       <li>
         <b>Teléfono</b>: 932658205
