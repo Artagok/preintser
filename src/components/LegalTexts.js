@@ -413,13 +413,13 @@ const _1 = (props) => (
     <p>
       La LOPD y el RGPD conceden a los interesados la posibilidad de ejercer una
       serie de derechos relacionados con el tratamiento de sus datos personales.
-      Para ello, el Usuario deberá dirigirse, aportando documentación que
-      acredite su identidad (DNI o pasaporte), mediante correo electrónico a
+      Para ello, el Usuario deberá dirigirse, mediante correo electrónico a
+      <tt> preintser-decor@telefonica.net</tt> o a
       <tt> reformaspreintser@gmail.com</tt>, o bien mediante comunicación
-      escrita a la dirección que aparece en nuestro Aviso Legal. Dicha
-      comunicación deberá reflejar la siguiente información: nombre y apellidos
-      del Usuario, la petición de solicitud, el domicilio y los datos
-      acreditativos.
+      escrita a la dirección que aparece en nuestro Aviso Legal, identificándose
+      adecuadamente. Dicha comunicación deberá reflejar la siguiente
+      información: nombre y apellidos del Usuario, el objeto de la solicitud, el
+      domicilio y los datos acreditativos.
     </p>
     <p>
       El ejercicio de derechos deberá ser realizado por el propio Usuario. No
