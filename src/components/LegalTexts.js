@@ -601,7 +601,7 @@ const _1 = (props) => (
     <hr></hr>
     <p>
       Esta política de privacidad y de protección de datos ha sido redactada con
-      fecha del 29 de julio de 2026. Podrá variar en función de los cambios de
+      fecha del 23 de julio de 2026. Podrá variar en función de los cambios de
       normativa y jurisprudencia que se vayan produciendo, siendo
       responsabilidad del titular de los datos la lectura del documento
       actualizado, en orden a conocer sus derechos y obligaciones al respecto en
