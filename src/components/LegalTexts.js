@@ -79,7 +79,8 @@ const _0 = (props) => (
         207 Hoja B342388
       </li>
       <li>
-        <b>Domicilio Social</b>: C/ Garrotxa, 7-9 - Local 6 – 08041 Barcelona
+        <b>Domicilio Social</b>: C/ Garrotxa, 7-9 - Local 6 - 08041 Barcelona,
+        Catalunya, España
       </li>
       <li>
         <b>Actividad</b>: Construcción
@@ -90,21 +91,22 @@ const _0 = (props) => (
       <li>
         <b>eMail</b>: reformaspreintser@gmail.com{" "}
       </li>
-      <li>
-        <b>Formulario de contacto online</b>: https://www.reformaspreintser.es/{" "}
-      </li>
+      {/* <li>
+        <b>Formulario de contacto online</b>:
+        https://www.reformaspreintser.es/{" "}
+      </li> */}
       <li>
         <b>Nombre de Dominio</b> https://www.reformaspreintser.es/
       </li>
-      <li>
+      {/* <li>
         <b>Registro de Tratamientos conforme al RGPD</b>: Clientes/Proveedores,
         Empleados, Selección de Personal y Usuarios Web.
-      </li>
+      </li> */}
     </ul>
     <h5>Finalidad de la Web</h5>
     <hr></hr>
     <p>
-      La web de Reformas Preintser tiene la finalidad de informar a clientes y
+      La web de "Reformas Preintser" tiene la finalidad de informar a clientes y
       potenciales clientes de sus productos y/o servicios, datos de contacto,
       ubicación, etc. Además, en su caso, también tendrá la finalidad de
       divulgar información relacionada con el sector de actividad del
@@ -118,15 +120,15 @@ const _0 = (props) => (
     </p>
     <ul>
       <li>
-        Reglamento General de Protección de Datos (RGPD) (UE) 2016/679, que
-        regula el tratamiento de datos personales en los países de la Unión
-        Europea.
+        Reglamento General de Protección de Datos (RGPD) (UE) 2016/679, de 27 de
+        abril, que regula el tratamiento de datos personales en los países de la
+        Unión Europea.
       </li>
       <li>
-        Ley Orgánica 3/2018, de 5 de diciembre, sobre protección de datos y
-        derechos digitales (LOPD y GDD), normas de ámbito regional (aplicables a
-        España), y que definen y amplían muchos de los conceptos y derechos
-        presentes en el RGPD.
+        Ley Orgánica 3/2018, de 5 de diciembre, sobre Protección de Datos
+        Personales y Garantía de los Derechos Digitales (LOPD y GDD), norma de
+        ámbito regional (aplicable a España), y que define y amplía muchos de
+        los conceptos y derechos presentes en el RGPD.
       </li>
       <li>
         Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la
@@ -138,12 +140,16 @@ const _0 = (props) => (
     <p>
       Toda persona que acceda a este sitio web asume el papel de Usuario,
       comprometiéndose a la observancia y cumplimiento riguroso de las
-      condiciones aquí dispuestas, así como a cualesquiera otra disposición
-      legal que fuera de aplicación. "Reformas Preintser" no se hará responsable
-      de los daños y perjuicios, propios o a terceros, producidos por el uso de
-      este sitio web por parte del Usuario.
+      condiciones aquí dispuestas, así como a cualquiera otra disposición legal
+      que fuera de aplicación. "Reformas Preintser" no se hará responsable de
+      los daños y perjuicios, propios o a terceros, producidos por el uso
+      inadecuado de este sitio web por parte del Usuario
     </p>
     <p>
+      El contenido de esta web, por tanto, no puede ser considerado, en ningún
+      caso, sustitutivo de asesoramiento legal.
+    </p>
+    {/* <p>
       "Reformas Preintser" proporciona el acceso a artículos, informaciones,
       servicios y datos de su propiedad o de terceros, elaborados con fines
       meramente informativos o divulgativos, que pueden no reflejar el estado
@@ -152,7 +158,7 @@ const _0 = (props) => (
       necesariamente por el Usuario a casos concretos. El contenido de esta web,
       por tanto, no puede ser considerado, en ningún caso, sustitutivo de
       asesoramiento legal.
-    </p>
+    </p> */}
     <p>
       "Reformas Preintser" se reserva el derecho a modificar cualquier tipo de
       información que pudiera aparecer en la web, en cualquier momento y sin
@@ -171,25 +177,25 @@ const _0 = (props) => (
       garantizar el funcionamiento ininterrumpido o totalmente libre de errores
       de esta web, ni se responsabiliza de los virus que tengan su origen en una
       transmisión telemática infiltrados por terceros generados con la finalidad
-      de obtener resultados negativos para un sistema informático
+      de obtener resultados negativos para un sistema informático.
     </p>
     <p>
       El Usuario se compromete a no utilizar esta web ni, si es el caso, los
       servicios o productos ofrecidos en la misma, para la realización de
       actividades contrarias a la ley, al orden público o a estas condiciones de
       uso. Por tanto, "Reformas Preintser" no se hace responsable de la
-      información y contenidos almacenados, a título enunciativo pero no
+      información y contenidos almacenados, a título enunciativo, pero no
       limitativo, en foros, chats, generadores de blogs, comentarios, redes
-      sociales o cualesquiera otro medio que permita a terceros publicar
+      sociales o cualquier otro medio que permita a terceros publicar
       contenidos. No obstante, y en cumplimiento de lo dispuesto en el art. 11 y
       16 de la LSSI-CE, "Reformas Preintser" se pone a disposición de todos los
-      Usuarios, autoridades y fuerzas de seguridad, y colaborando de forma
-      activa en la retirada o en su caso bloqueo de todos aquellos contenidos
-      que pudieran afectar o contravenir la legislación nacional, o
-      internacional, derechos de terceros, o la moral y el orden público. En
-      caso de que un Usuario considere que existe en la web algún contenido que
-      pudiera ser susceptible de esta clasificación, se ruega lo notifique de
-      forma inmediata a nuestro personal.
+      Usuarios, autoridades y fuerzas de seguridad, colaborando de forma activa
+      en la retirada o en su caso bloqueo de todos aquellos contenidos que
+      pudieran afectar o contravenir la legislación nacional, o internacional,
+      derechos de terceros, o la moral y el orden público. En caso de que un
+      Usuario considere que existe en la web algún contenido que pudiera ser
+      susceptible de esta clasificación, se ruega lo notifique de forma
+      inmediata a nuestro personal.
     </p>
     <p>
       "Reformas Preintser" se reserva el derecho a denegar o retirar el acceso a
@@ -199,7 +205,7 @@ const _0 = (props) => (
     <h5>Propiedad Intelectual</h5>
     <hr></hr>
     <p>
-      El sitio web, incluyendo a título enunciativo pero no limitativo su
+      El sitio web, incluyendo a título enunciativo, pero no limitativo su
       programación, edición, compilación y demás elementos necesarios para su
       funcionamiento, los diseños, logotipos, texto y/o gráficos son propiedad
       de "Reformas Preintser" o, en su caso, dispone de licencia o autorización
@@ -207,13 +213,12 @@ const _0 = (props) => (
     </p>
     <p>
       Todos los contenidos del sitio web se encuentran debidamente protegidos
-      por la normativa de propiedad intelectual e industrial (artículos 8 y
-      32.1, párrafo segundo, de la Ley de Propiedad Intelectual), así como
-      inscritos en los registros públicos correspondientes, y no se permite la
+      por la normativa de propiedad intelectual e industrial, así como inscritos
+      en los registros públicos correspondientes, y no se permite la
       reproducción y/o publicación, total o parcial, del sitio web, ni su
       tratamiento informático, su distribución, difusión, modificación o
-      transformación, sin el permiso previo y por escrito del mismo. “Reformas
-      Preintser” velará por el cumplimiento de las anteriores condiciones, así
+      transformación, sin el permiso previo y por escrito del mismo. "Reformas
+      Preintser" velará por el cumplimiento de las anteriores condiciones, así
       como por la debida utilización de los contenidos presentados en sus
       páginas web, ejercitando todas las acciones civiles y penales que le
       correspondan en el caso de infracción o incumplimiento de estos derechos
@@ -251,13 +256,18 @@ const _0 = (props) => (
     <h5>Ley Aplicable y Jurisdicción</h5>
     <hr></hr>
     <p>
-      La relación entre Responsable y Usuario se rige en todos y cada uno de sus
-      extremos por la ley española, a la que se someten expresamente ambas
-      partes. El idioma de redacción e interpretación de este aviso legal es el
-      español. Para la resolución de todas las controversias o cuestiones
-      relacionadas con el presente sitio web o de las actividades en él
-      desarrolladas, "Reformas Preintser" y Usuario acuerdan someterse a los
-      Juzgados y Tribunales del domicilio del Usuario.
+      El idioma de redacción e interpretación de este aviso legal es el español.
+    </p>
+    <p>
+      La relación entre “Reformas Preintser” y Usuario se rige en todos y cada
+      uno de sus extremos por la ley española, a la que se someten expresamente
+      ambas partes ante cualquier controversia o cuestión relacionada con el
+      presente sitio web o las actividades en él desarrolladas.
+    </p>
+    <p>
+      Por su parte, en el caso de que el usuario tenga su domicilio fuera de
+      España, “Reformas Preintser” y Usuario se someten, con renuncia expresa a
+      cualquier otro fuero, a los Juzgados y Tribunales competentes de España.
     </p>
   </React.Fragment>
 );
@@ -269,8 +279,9 @@ const _1 = (props) => (
       carácter personal, y garantiza el cumplimiento íntegro de las obligaciones
       dispuestas, así como la implementación de las medidas de seguridad
       dispuestas en el Reglamento General de Protección de Datos (RGPD) (UE)
-      2016/679 y en Ley Orgánica 3/2018, de 5 de diciembre, sobre protección de
-      datos y derechos digitales (LOPD y GDD, en adelante LOPD).
+      2016/679, de 27 de abril, y en la Ley Orgánica 3/2018, de 5 de diciembre,
+      de Protección de Datos Personales y garantía de los derechos digitales
+      (LOPD y GDD, en adelante LOPD).
     </p>
     <p>
       De conformidad con estas normativas, informamos que la utilización de
@@ -287,7 +298,8 @@ const _1 = (props) => (
         <b>CIF</b>: B64472244
       </li>
       <li>
-        <b>Domicilio Social</b>: C/ Garrotxa, 7-9 - Local 6 – 08041 Barcelona
+        <b>Domicilio Social</b>: C/ Garrotxa, 7-9 - Local 6 - 08041 Barcelona,
+        Catalunya, España
       </li>
       <li>
         <b>Teléfono</b>: 932658205
@@ -319,7 +331,7 @@ const _1 = (props) => (
       identificativos y corresponden a un mínimo razonable para poder llevar a
       término la actividad realizada. En particular, no se recogen datos
       especialmente protegidos en ningún momento. En ningún caso se realizará un
-      uso diferente de los datos, que la finalidad para los que han sido
+      uso diferente de los datos que la finalidad para los que han sido
       recabados.
     </p>
     <p style={{ textDecoration: "underline" }}>Formularios de contacto/email</p>
@@ -335,12 +347,8 @@ const _1 = (props) => (
       <li>
         <b>Cesión de datos</b>: Los datos personales serán tratados a través de
         servidores gestionados por{" "}
-        <a
-          href="https://www.ionos.es/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          1&amp;1
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          GitHub
         </a>
         , que tendrá la consideración de Encargado del Tratamiento.
       </li>
@@ -363,20 +371,20 @@ const _1 = (props) => (
     <h5>Medidas de seguridad</h5>
     <hr></hr>
     <p>
-      Se informa a los Usuarios de la web de “Reformas Preintser” de que se han
-      adoptado las medidas de seguridad técnicas, organizativas y de seguridad a
-      nuestro alcance para evitar la pérdida, mal uso, alteración, acceso no
-      autorizado y robo de los datos, y que garantizan así la confidencialidad,
-      integridad y calidad de la información contenida en las mismas, de acuerdo
-      con lo establecido en la normativa vigente en materia de protección de
-      datos. Los datos personales que se recogen en los formularios son objeto
-      de tratamiento, únicamente, por parte del personal de “Reformas Preintser”
-      o de los Encargados del Tratamiento designados.
+      Se informa a los Usuarios de la web de "Reformas Preintser" de que se han
+      adoptado las medidas de seguridad, técnicas y organizativas a nuestro
+      alcance para evitar la pérdida, mal uso, alteración, acceso no autorizado
+      y robo de los datos, y que garantizan así la confidencialidad, integridad
+      y calidad de la información contenida en las mismas, de acuerdo con lo
+      establecido en la normativa vigente en materia de protección de datos. Los
+      datos personales que se recogen en los formularios son objeto de
+      tratamiento, únicamente, por parte del personal de "Reformas Preintser" o
+      de los Encargados del Tratamiento designados.
     </p>
     <p>
-      El Sitio Web de “Reformas Preintser” cuenta además con un cifrado SSL, que
+      El Sitio Web de "Reformas Preintser" cuenta además con un cifrado SSL, que
       permite al Usuario el envío seguro de sus datos personales a través de los
-      formularios de contacto del sitio web.
+      formularios de contacto o registro del sitio web.
     </p>
     <h5>Veracidad de los datos</h5>
     <hr></hr>
@@ -392,21 +400,32 @@ const _1 = (props) => (
     <h5>Cesión de datos</h5>
     <hr></hr>
     <p>
-      “Reformas Preintser” no cederá ni comunicará a ningún tercero tus datos,
-      excepto en los casos legalmente previstos o cuando la prestación de un
-      servicio implique la necesidad de una relación contractual con un
-      Encargado de Tratamiento. Así, el Usuario acepta que algunos de los datos
-      personales recabados sean facilitados a estos Encargados del Tratamiento
-      (plataformas de pago, gestoría, intermediarios, etc.), cuando sea
-      necesario para la efectiva realización de un servicio contratado o
-      producto adquirido. El Usuario acepta también que, en caso de prestación
-      de servicios, éstos puedan ser, total o parcialmente, subcontratados a
-      otras personas o empresas, que tendrán la consideración de Encargados del
-      Tratamiento, con los que se ha convenido el correspondiente contrato de
-      confidencialidad, o adherido a sus políticas de privacidad, establecidas
-      en sus respectivas páginas web. El Usuario podrá negarse a la cesión de
-      sus datos a los Encargados del Tratamiento, mediante petición escrita, por
-      cualquiera de los medios anteriormente referenciados.
+      "Reformas Preintser" no cederá ni comunicará a ningún tercero tus datos,
+      excepto en los casos legalmente previstos o cuando sea estrictamente
+      necesario para la prestación de un servicio. Concretamente, los datos
+      podrán ser cedidos a:
+    </p>
+    <ul>
+      <li>Proveedores de servicios tecnológicos o informáticos</li>
+      <li>Proveedores de servicios de pago</li>
+      <li>Empresas de mensajería y paquetería</li>
+      <li>
+        Terceros o intermediarios, en calidad de prestadores de servicios, que
+        operen en nuestro propio nombre (gestoría, asesoría…).
+      </li>
+    </ul>
+    <p>
+      Las cesiones de datos se producirán respetando la más estricta
+      confidencialidad, empleando las medidas necesarias, tales como la firma de
+      contratos de confidencialidad, o la adhesión a sus políticas de privacidad
+      establecidas en sus respectivas páginas web. El Usuario podrá negarse a la
+      cesión de sus datos a los Encargados del Tratamiento, mediante petición
+      escrita, por cualquiera de los medios anteriormente referenciados.
+    </p>
+    <p>
+      Además, en aquellos casos en que sea necesario, los datos de Clientes
+      podrán ser cedidos a determinados organismos, en cumplimiento de una
+      obligación legal: Agencia Tributaria Española, Inspección de Trabajo, etc.
     </p>
     <h5>Ejercicio de Derechos del Usuario</h5>
     <hr></hr>
@@ -430,21 +449,34 @@ const _1 = (props) => (
     <p>El Usuario podrá solicitar el ejercicio de los derechos siguientes:</p>
     <ul>
       <li>
-        Derecho a solicitar el <b>acceso</b> a los datos personales.
+        Derecho a solicitar el <b>acceso</b> a los datos personales, que es el
+        derecho a obtener información sobre si sus propios datos de carácter
+        personal están siendo objeto de tratamiento, la finalidad del
+        tratamiento que, en su caso, se esté realizando, así como la información
+        disponible sobre el origen de dichos datos y las comunicaciones
+        realizadas o previstas de los mismos.
       </li>
       <li>
-        Derecho a solicitar su <b>rectificación</b> (en caso de que sean
-        incorrectos) o supresión.
+        Derecho a solicitar su <b>rectificación</b>, en caso de que los datos
+        personales sean incorrectos o inexactos, o <b>supresión</b> de los datos
+        que resulten ser inadecuados o excesivos.
       </li>
       <li>
         Derecho a solicitar la <b>limitación</b> de su tratamiento, en cuyo caso
-        únicamente serán conservados por “Reformas Preintser” para el ejercicio
-        o la defensa de reclamaciones.
+        únicamente serán conservados por "Reformas Preintser" los datos
+        estrictamente necesarios para el ejercicio o la defensa de
+        reclamaciones.
       </li>
       <li>
-        Derecho a <b>oponerse</b> al tratamiento: "Reformas Preintser" dejará de
-        tratar sus datos, salvo que por motivos legítimos o el ejercicio o la
-        defensa de posibles reclamaciones se tengan que seguir tratando.
+        Derecho a <b>oponerse</b> al tratamiento: se refiere al derecho del
+        interesado a que no se lleve a cabo el tratamiento de sus datos
+        personales o se cese en el mismo en los supuestos en que no sea
+        necesario su consentimiento para el tratamiento, que se trate de
+        ficheros de prospección comerciales o que tengan la finalidad de adoptar
+        decisiones referidas al interesado y basadas únicamente en el
+        tratamiento automatizado de sus datos, salvo que por motivos legítimos o
+        el ejercicio o la defensa de posibles reclamaciones se tengan que seguir
+        tratando.
       </li>
       <li>
         Derecho a la <b>portabilidad</b> de los datos: en caso de que quiera que
@@ -467,8 +499,8 @@ const _1 = (props) => (
       máximo (1 mes).
     </p>
     <p>
-      Si un Usuario considera que hay un problema con la forma en que “Reformas
-      Preintser” está manejando sus datos, puede dirigir sus reclamaciones al
+      Si un Usuario considera que hay un problema con la forma en que "Reformas
+      Preintser" está manejando sus datos, puede dirigir sus reclamaciones al
       Responsable de Seguridad o a la autoridad de protección de datos que
       corresponda, siendo la Agencia Española de Protección de Datos la indicada
       en el caso de España.
@@ -519,66 +551,59 @@ const _1 = (props) => (
     <hr></hr>
     <p>
       "Reformas Preintser" cuenta con perfil en algunas de las principales redes
-      sociales de Internet (Twitter), reconociéndose en todos los casos
-      Responsable del tratamiento de los datos de sus seguidores, fans,
-      suscriptores, comentaristas y otros perfiles de Usuarios (en adelante,
-      seguidores) publicados por "Reformas Preintser".
-    </p>
-    <p>
-      La finalidad del tratamiento de datos por parte de "Reformas Preintser",
-      cuando la ley no lo prohíba, será la de informar a sus seguidores sobre
-      sus actividades y ofertas, por cualquier vía que la red social permita,
-      así como prestar servicio personalizado de atención al cliente. La base
-      jurídica que legitima este tratamiento será el consentimiento del
-      interesado, que podrá revocar en cualquier momento.
+      sociales de Internet (X). La finalidad del tratamiento de datos por parte
+      de "Reformas Preintser" será la de informar a sus seguidores sobre sus
+      actividades, utilizando las herramientas que la red social en cuestión
+      permita, y brindar un servicio personalizado de atención al usuario. El
+      Usuario debe tener en cuenta que el uso de estas redes sociales está
+      sujeto a sus respectivas condiciones de uso y políticas de privacidad de
+      las plataformas. "Reformas Preintser" recomienda a los Usuarios la
+      consulta previa de estas condiciones y políticas de privacidad antes de
+      utilizar los enlaces o aplicaciones proporcionados.
     </p>
     <p>
       En ningún caso "Reformas Preintser" extraerá datos de las redes sociales,
       a menos que se obtuviera puntual y expresamente el consentimiento del
-      Usuario para ello (por ejemplo, para la realización de un concurso).
+      Usuario para ello. Además, "Reformas Preintser" no se responsabiliza de
+      las prácticas de privacidad de estas redes sociales o sus aplicaciones,
+      especialmente en lo que respecta a la confidencialidad, tratamiento de
+      datos personales y contenido.
     </p>
     <h5>Selección de personal</h5>
     <hr></hr>
     <p>
       El aspirante que envíe comunicaciones electrónicas a "Reformas Preintser",
       con la finalidad de acceder a los procesos de selección de personal del
-      responsable, nos autoriza a analizar: los documentos remitidos (por
+      responsable, nos autoriza a analizar los documentos que remitidos (por
       ejemplo, el C.V.), todo el contenido que sea directamente accesible a
       través de buscadores de Internet (por ejemplo, Google), los perfiles que
       mantenga en redes sociales profesionales (por ejemplo, LinkedIn), los
-      datos obtenidos en las pruebas de acceso, y la información que revele en
-      la entrevista de trabajo; con el objetivo de valorar su candidatura y
-      poder, en su caso, ofrecerle un puesto de trabajo. En caso de que el
-      candidato no sea seleccionado, "Reformas Preintser" podrá mantener
-      almacenado su C.V. durante un máximo de dos años, para incorporarlo a
-      futuras convocatorias, a menos que el candidato manifieste lo contrario.
-      La base jurídica que legitima este tratamiento será el consentimiento del
-      interesado, que podrá revocar en cualquier momento.
+      datos obtenidos en las pruebas de acceso y la información que revele en la
+      entrevista de trabajo, con el objetivo de valorar su candidatura y poder,
+      en su caso, ofrecerle un puesto de trabajo. En caso de que el candidato no
+      sea seleccionado, "Reformas Preintser" podrá mantener almacenado su C.V.
+      durante un máximo de dos años, para incorporarlo a futuras convocatorias,
+      a menos que el candidato manifieste lo contrario. La base jurídica que
+      legitima este tratamiento será el consentimiento del interesado, que podrá
+      revocar en cualquier momento.
     </p>
     <h5>Confidencialidad</h5>
     <hr></hr>
     <p>
-      La información suministrada por el cliente tendrá, en todo caso, la
+      La información suministrada por el Usuario tendrá, en todo caso, la
       consideración de confidencial, sin que pueda ser utilizada para otros
       fines distintos a los aquí descritos. "Reformas Preintser" se obliga a no
       divulgar ni revelar información sobre las pretensiones del Usuario, los
-      motivos del asesoramiento solicitado, o la duración de su relación con
+      motivos del asesoramiento solicitado o la duración de su relación con
       éste.
     </p>
     <h5>Validez</h5>
     <hr></hr>
     <p>
-      Esta política de privacidad y de protección de datos ha sido redactada por{" "}
-      <a
-        target="_blank"
-        href="https://www.expertoslopd.es"
-        rel="noopener noreferrer"
-      >
-        EXPERTOS LOPD®
-      </a>
-      , empresa de protección de datos, a día 23:13, y podrá variar en función
-      de los cambios de normativa y jurisprudencia que se vayan produciendo,
-      siendo responsabilidad del titular de los datos la lectura del documento
+      Esta política de privacidad y de protección de datos ha sido redactada con
+      fecha del 29 de julio de 2026. Podrá variar en función de los cambios de
+      normativa y jurisprudencia que se vayan produciendo, siendo
+      responsabilidad del titular de los datos la lectura del documento
       actualizado, en orden a conocer sus derechos y obligaciones al respecto en
       cada momento.
     </p>

@@ -32,11 +32,11 @@ const Footer = (props) => {
               <Link to="/privacy" onClick={() => window.scrollTo(0, 0)}>
                 <span>{lang.footer.legal[1]}</span>{" "}
               </Link>
-              <pre> | </pre>
+              {/* <pre> | </pre> */}
               {/* === Cookies === */}
-              <Link to="/cookies" onClick={() => window.scrollTo(0, 0)}>
+              {/* <Link to="/cookies" onClick={() => window.scrollTo(0, 0)}>
                 <span>{lang.footer.legal[2]}</span>
-              </Link>
+              </Link> */}
               {/* <pre> | </pre> */}
               {/* === Certificat === */}
               {/* <span onClick={toggle}>{lang.footer.legal[3]}</span>{" "} */}

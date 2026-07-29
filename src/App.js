@@ -68,7 +68,7 @@ function App() {
             {/* prettier-ignore */}
             <Route path="/legal"   render={() => <LegalTexts type={0} />} />
             <Route path="/privacy" render={() => <LegalTexts type={1} />} />
-            <Route path="/cookies" render={() => <LegalTexts type={2} />} />
+            {/* <Route path="/cookies" render={() => <LegalTexts type={2} />} /> */}
             <Route render={() => <NotFound />} />
           </Switch>
           <Footer />

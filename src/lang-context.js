@@ -164,7 +164,7 @@ export const langs = {
     },
     footer: {
       legal: [
-        "Avís Legal",
+        "Avís Legal i Condicions d'ús",
         "Política de Privacitat",
         "Política de Cookies",
         "Certificat"
@@ -339,7 +339,7 @@ export const langs = {
     },
     footer: {
       legal: [
-        "Aviso Legal",
+        "Aviso Legal y Condiciones de Uso",
         "Política de Privacidad",
         "Política de Cookies",
         "Certificado"
@@ -517,7 +517,7 @@ export const langs = {
       }
     },
     footer: {
-      legal: ["Legal Notice", "Privacy Policy", "Cookies Policy", "Certificate"]
+      legal: ["Legal Notice and Terms of Use", "Privacy Policy", "Cookies Policy", "Certificate"]
     },
     legalTexts: {},
     notFound: {
